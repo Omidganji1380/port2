@@ -1,0 +1,1820 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>::eBazar:: Ui Card </title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Favicon-->
+
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="../assets/plugin/prism/prism.css">
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../assets/css/ebazar.style.min.css">
+</head>
+<body class="rtl_mode" style>
+    <div id="ebazar-layout" class="theme-blue">
+
+        <!-- sidebar -->
+        <div class="sidebar px-4 py-4 py-md-5 me-0">
+            <div class="d-flex flex-column h-100">
+                <a href="index.html" class="mb-0 brand-icon">
+                    <span class="logo-icon">
+                        <i class="bi bi-bag-check-fill fs-4"></i>
+                    </span>
+                    <span class="logo-text">ای بازار</span>
+                </a>
+                <!-- Menu: main ul -->
+                <ul class="menu-list flex-grow-1 mt-3">
+                    <li><a class="m-link" href="../index.html"><i class="icofont-ui-home"></i><span>خانه</span></a>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Authentication" href="#"><i
+                                class="icofont-ui-lock"></i> <span>احراز هویت</span> <span class="arrow icofont-dotted-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="menu-Authentication">
+                            <li><a class="ms-link" href="auth-signin.html"><span>ورود</span></a></li>
+                            <li><a class="ms-link" href="auth-signup.html"><span>ثبت نام</span></a></li>
+                            <li><a class="ms-link" href="auth-password-reset.html"><span>بازنشانی رمز عبور</span></a></li>
+                            <li><a class="ms-link" href="auth-two-step.html"><span>احراز هویت 2 مرحله ای</span></a></li>
+                            <li><a class="ms-link" href="auth-404.html"><span>404</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="index.html"><i class="icofont-code"></i> <span>صفحه شروع کننده</span></a></li>
+                    <li class="collapsed">
+                        <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Components" href="#"><i
+                                class="icofont-paint"></i> <span>اجزای رابط کاربری</span> <span class="arrow icofont-dotted-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse show" id="menu-Components">
+                            <li><a class="ms-link" href="ui-alerts.html"><span>هشدارها</span> </a></li>
+                            <li><a class="ms-link" href="ui-badge.html"><span>نشان</span></a></li>
+                            <li><a class="ms-link" href="ui-breadcrumb.html"><span>برد کرامب</span></a></li>
+                            <li><a class="ms-link" href="ui-buttons.html"><span>دکمه ها</span></a></li>
+                            <li><a class="ms-link active" href="ui-card.html"><span>کارت</span></a></li>
+                            <li><a class="ms-link" href="ui-carousel.html"><span>کاروسل</span></a></li>
+                            <li><a class="ms-link" href="ui-collapse.html"><span>جمع شونده</span></a></li>
+                            <li><a class="ms-link" href="ui-dropdowns.html"><span>بازشوها</span></a></li>
+                            <li><a class="ms-link" href="ui-listgroup.html"><span>گروه لیست</span></a></li>
+                            <li><a class="ms-link" href="ui-modal.html"><span>مودال</span></a></li>
+                            <li><a class="ms-link" href="ui-navs.html"><span>ناوها</span></a></li>
+                            <li><a class="ms-link" href="ui-navbar.html"><span>نوار</span></a></li>
+                            <li><a class="ms-link" href="ui-pagination.html"><span>صفحه بندی</span></a></li>
+                            <li><a class="ms-link" href="ui-popovers.html"><span>پنجره های بازشو</span></a></li>
+                            <li><a class="ms-link" href="ui-progress.html"><span>پیشرفت</span></a></li>
+                            <li><a class="ms-link" href="ui-scrollspy.html"><span>اسکرول اسپی</span></a></li>
+                            <li><a class="ms-link" href="ui-spinners.html"><span>چرخنده ها</span></a></li>
+                            <li><a class="ms-link" href="ui-toasts.html"><span>نان تست</span></a></li>
+                            <li><a class="ms-link" href="ui-tooltips.html"><span>راهنمای ابزار</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="documentation.html"><i class="icofont-law-document"></i>
+                            <span>مستندات</span></a></li>
+                    <li><a class="m-link" href="changelog.html"><i class="icofont-edit"></i> <span>تغییرات</span> <span
+                            class="ms-auto small-14 fw-bold">v1.0.0</span></a></li>
+                </ul>
+        
+            
+                <!-- Menu: menu collepce btn -->
+                <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                    <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- main body area -->
+        <div class="main px-lg-4 px-md-4">
+
+            <!-- Body: Header -->
+            <div class="header">
+                <nav class="navbar py-4">
+                    <div class="container">
+
+                        <!-- header rightbar icon -->
+                        <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+                            <div class="d-flex">
+                                <a class="nav-link text-primary collapsed" href="help.html" title="Get Help">
+                                    <i class="icofont-info-square fs-5"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown notifications">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="icofont-alarm fs-5"></i>
+                                    <span class="pulse-ring"></span>
+                                </a>
+                                <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3">
+                                    <div class="card border-0 w380">
+                                        <div class="card-header border-0 p-3">
+                                            <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                                <span>اعلان ها</span>
+                                                <span class="badge text-white">06</span>
+                                            </h5>
+                                        </div>
+                                        <div class="tab-content card-body">
+                                            <div class="tab-pane fade show active">
+                                                <ul class="list-unstyled list mb-0">
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar1.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>2مین</small></p>
+                                                                <span class="">محصول جدید اضافه شد 2021-07-15 <span class="badge bg-success">اضاف</span></span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <div class="avatar rounded-circle no-thumbnail">AH</div>
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">تولید کننده فاکتور </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar3.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">برگشت سفارش RT-00004</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar5.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">سفارش محصول به اسباب بازی فروشی</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar6.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">رد تایید</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar7.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small class="">1روز</small></p>
+                                                                <span class="">ورود محصول استوک به روز شد</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="card-footer text-center border-top-0" href="#"> مشاهده تمام اعلان ها</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
+                                <div class="u-info me-2">
+                                    <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">آرش خادملو</span></p>
+                                    <small>مشخصات مدیر</small>
+                                </div>
+                                <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static">
+                                    <img class="avatar lg rounded-circle img-thumbnail" src="../assets/images/profile_av.svg" alt="profile">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                                    <div class="card border-0 w280">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex py-1">
+                                                <img class="avatar rounded-circle" src="../assets/images/profile_av.svg" alt="profile">
+                                                <div class="flex-fill ms-3">
+                                                    <p class="mb-0"><span class="font-weight-bold">آرش خادملو</span></p>
+                                                    <small class="">Johnquinn@gmail.com</small>
+                                                </div>
+                                            </div>
+                                            
+                                            <div><hr class="dropdown-divider border-dark"></div>
+                                        </div>
+                                        <div class="list-group m-2 ">
+                                            <a href="../admin-profile.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-ui-user fs-5 me-3"></i>صفحه پروفایل</a>
+                                            <a href="../order-invoices.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-file-text fs-5 me-3"></i>سفارش فاکتورها</a>
+                                            <a href="auth-signin.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-logout fs-5 me-3"></i>خروج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting ms-2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
+                            </div>
+                        </div>
+        
+                        <!-- menu toggler -->
+                        <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                            <span class="fa fa-bars"></span>
+                        </button>
+        
+                        <!-- main menu Search-->
+                        <div class="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
+                            <div class="input-group flex-nowrap input-group-lg">
+                                <input type="search" class="form-control" placeholder="جستجو" aria-label="search" aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Body: Body -->
+            <div class="body d-flex py-lg-3 py-md-2">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-8 col-sm-12">
+
+                                <h2 id="about">درباره</h2>
+                                <p>یک <strong>کارت</strong> یک ظرف محتوای انعطاف پذیر و قابل توسعه است. این شامل گزینه هایی برای سرصفحه ها و پاورقی ها، طیف گسترده ای از محتوا، رنگ های پس زمینه متنی و گزینه های نمایش قدرتمند است. اگر با بوت استرپ 3 آشنایی دارید، کارت ها جایگزین پانل ها، چاه ها و تصاویر کوچک قدیمی ما می شوند. عملکردی مشابه با آن اجزا به عنوان کلاس های اصلاح کننده برای کارت ها در دسترس است.</p>
+                                
+                                <h2 id="example">نمونه</h2>
+                                <p>کارت‌ها با کمترین نشانه‌گذاری و سبک‌های ممکن ساخته می‌شوند، اما همچنان کنترل و سفارشی‌سازی زیادی را ارائه می‌کنند. ساخته شده با flexbox، آنها را به آسانی تراز می کنند و به خوبی با سایر اجزای بوت استرپ ترکیب می شوند. آنها ندارند <code>margin</code> by default, so use <a href="http://pixelwibes.com/docs/5.0/utilities/spacing/">ابزارهای فاصله گذاری</a> به عنوان مورد نیاز.</p>
+                                <p>در زیر نمونه ای از کارت پایه با محتوای ترکیبی و عرض ثابت آورده شده است. کارت ها هیچ عرض ثابتی برای شروع ندارند، بنابراین به طور طبیعی تمام عرض عنصر اصلی را پر می کنند. این به راحتی با انواع مختلف ما سفارشی می شود <a href="#sizing">sizing options</a>.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="../assets/images/gallery/1.jpg" alt="" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h2 id="content-types">انواع محتوا</h2>
+                                <p>کارت‌ها از محتوای متنوعی از جمله تصاویر، متن، گروه‌های فهرست، پیوندها و موارد دیگر پشتیبانی می‌کنند. در زیر نمونه هایی از موارد پشتیبانی شده آورده شده است.</p>
+                                
+                                <h3 id="body">بدنه<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#body" style="padding-left: 0.375em;"></a></h3>
+                                <p>بلوک سازنده یک کارت نمونه هایی از مواردی است که پشتیبانی می شود <code>.card-body</code>. هر زمان که به یک بخش خالی در کارت نیاز دارید از آن استفاده کنید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            این مقداری متن در بدنه کارت است.
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            This is some text within a card body.
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="titles-text-and-links">عناوین، متن و پیوندها</h3>
+                                <p>عنوان کارت با افزودن استفاده می شود <code>.card-title</code> به یک <code>&lt;h*&gt;</code> برچسب زدن به همین ترتیب لینک ها اضافه می شوند و با افزودن در کنار هم قرار می گیرند <code>.card-link</code> به یک <code>&lt;a&gt;</code> tag.</p>
+                                <p>زیرنویس با اضافه کردن a استفاده می شود <code>.card-subtitle</code> به یک <code>&lt;h*&gt;</code> تگ. اگر <code>.card-title</code> و <code>.card-subtitle</code> اقلام در الف قرار می گیرند <code>.card-body</code> عنوان، عنوان کارت و زیرنویس به خوبی تراز شده اند.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">زیرنویس کارت</h6>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                            <a href="#" class="card-link">زیرنویس کارت</a>
+                                            <a href="#" class="card-link">زیرنویس کارت</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle mb-2 text-muted&quot;&gt;Card subtitle&lt;/h6&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="images">تصاویر</h3>
+                                <p><code>.card-img-top</code> یک تصویر را در بالای کارت قرار می دهد. با <code>.card-text</code>، متن را می توان به کارت اضافه کرد. متن در داخل <code>.card-text</code> همچنین می توان با تگ های استاندارد HTML استایل دهی کرد.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="../assets/images/gallery/2.jpg" alt="" />
+                                    
+                                        <div class="card-body">
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="list-groups">لیست کردن گروه ها</h3>
+                                <p>لیستی از محتوا را در یک کارت با یک گروه فهرست هموار ایجاد کنید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                        </ul>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-header">
+                                            برجسته
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                        </ul>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            Featured
+        &lt;/div&gt;
+        &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                        </ul>
+                                        <div class="card-footer">
+                                            پاورقی کارت
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;card-footer&quot;&gt;
+            Card footer
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h3 id="kitchen-sink">سینک آشپزخانه</h3>
+                                <p>چندین نوع محتوا را با هم ترکیب کرده و مطابقت دهید تا کارت مورد نیاز خود را ایجاد کنید، یا همه چیز را در آنجا بیندازید. در زیر، سبک‌های تصویر، بلوک‌ها، سبک‌های متن، و یک گروه فهرست نشان داده شده است که همه در یک کارت با عرض ثابت پیچیده شده‌اند..</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="../assets/images/gallery/6.jpg" alt="" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                            <li class="list-group-item">لورم ایپسوم متن ساختگی</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">لینک کارت</a>
+                                            <a href="#" class="card-link">لینک کارت</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/6.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h3 id="header-and-footer">سربرگ و پاورقی</h3>
+                                <p>یک سرصفحه و/یا پاورقی اختیاری در کارت اضافه کنید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-header color-bg-100">
+                                            برجسته
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            Featured
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <p>سرصفحه های کارت را می توان با اضافه کردن استایل کرد <code>.card-header</code> به <code>&lt;h*&gt;</code> عناصر.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <h5 class="card-header color-bg-100">برجسته</h5>
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot;&gt;
+        &lt;h5 class=&quot;card-header&quot;&gt;Featured&lt;/h5&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-header color-bg-100">
+                                            نقل قول
+                                        </div>
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک.</p>
+                                                <footer class="blockquote-footer">شخصی معروف در <cite title="Source Title">عنوان منبع</cite></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            Quote
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;blockquote class=&quot;blockquote mb-0&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                &lt;footer class=&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+            &lt;/blockquote&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                <div class="bd-example mb-5">
+                                    <div class="card text-center">
+                                        <div class="card-header color-bg-100">
+                                            ویژه
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            2 روز پیش
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card text-center&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            Featured
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-footer text-muted&quot;&gt;
+            2 days ago
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h2 id="sizing">سایز بندی</h2>
+                                <p>کارت ها هیچ خاصیت خاصی را در نظر نمی گیرند <code>width</code> برای شروع، بنابراین آنها 100٪ عرض خواهند داشت، مگر اینکه خلاف آن ذکر شده باشد. می‌توانید این مورد را در صورت نیاز با CSS سفارشی، کلاس‌های گرید، میکس‌های Grid Sass یا ابزارهای کمکی تغییر دهید..</p>
+                                <h3 id="using-grid-markup">استفاده از نشانه گذاری شبکه<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#using-grid-markup" style="padding-left: 0.375em;"></a></h3>
+                                <p>با استفاده از شبکه، کارت ها را در صورت نیاز در ستون ها و ردیف ها بپیچید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">درمان عنوان ویژه</h5>
+                                                    <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                                    <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">درمان عنوان ویژه</h5>
+                                                    <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                                    <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-6&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h3 id="using-utilities">با استفاده از خدمات شهری</h3>
+                                <p>از تعداد انگشت شماری ما استفاده کنید <a href="https://v5.getbootstrap.com/docs/5.0/utilities/sizing/">ابزار اندازه گیری موجود</a> برای تنظیم سریع عرض کارت.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card w-75">
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">دکمه</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card w-50">
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">دکمه</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card w-75&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card w-50&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h3 id="using-custom-css">استفاده از CSS سفارشی</h3>
+                                <p>از CSS سفارشی در شیوه نامه های خود یا به عنوان سبک های درون خطی برای تنظیم عرض استفاده کنید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h2 id="text-alignment">تراز متن</h2>
+                                <p>می‌توانید به سرعت هم‌ترازی نوشتاری هر کارت را - در کل یا بخش‌های خاص آن - با کارت ما تغییر دهید <a href="https://v5.getbootstrap.com/docs/5.0/utilities/text/#text-alignment">کلاس های تراز متن</a>.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card text-end" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card text-center&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card text-end&quot; style=&quot;width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h2 id="navigation">جهت یابی</h2>
+                                <p>با بوت استرپ مقداری پیمایش به هدر (یا بلوک) کارت اضافه کنید <a href="https://v5.getbootstrap.com/docs/5.0/components/navs/">اجزای ناو</a>.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card text-center">
+                                        <div class="card-header color-bg-100">
+                                            <ul class="nav nav-tabs card-header-tabs">
+                                                <li class="nav-item"><a class="nav-link active" aria-current="true" href="#">فعال</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">لینک</a></li>
+                                                <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">غیر فعال</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card text-center&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;ul class=&quot;nav nav-tabs card-header-tabs&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; aria-current=&quot;true&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                <div class="bd-example mb-5">
+                                    <div class="card text-center">
+                                        <div class="card-header color-bg-100">
+                                            <ul class="nav nav-pills card-header-pills">
+                                                <li class="nav-item"><a class="nav-link active" href="#">فعال</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">لینک</a></li>
+                                                <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">غیر فعال</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">درمان عنوان ویژه</h5>
+                                            <p class="card-text">با متن پشتیبان زیر به عنوان راهنما طبیعی برای محتوای اضافی.</p>
+                                            <a href="#" class="btn btn-primary">برو یه جایی</a>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card text-center&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;ul class=&quot;nav nav-pills card-header-pills&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h2 id="images-1">تصضاویر</h2>
+                                <p>کارت ها شامل چند گزینه برای کار با تصاویر هستند. از میان افزودن «کلاه‌های تصویر» در دو انتهای کارت، پوشاندن تصاویر با محتوای کارت، یا به سادگی جاسازی تصویر در کارت، انتخاب کنید..</p>
+                                <h3 id="image-caps">سرپوش های تصویری<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#image-caps" style="padding-left: 0.375em;"></a></h3>
+                                <p>مانند سرصفحه‌ها و پاورقی‌ها، کارت‌ها می‌توانند شامل «کلاه‌های تصویر» بالا و پایین باشند—تصاویر در بالا یا پایین کارت.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card mb-3">
+                                        <img class="card-img-top" src="../assets/images/gallery/10.jpg" alt="" />
+                                    
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                            <p class="card-text"><small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                            <p class="card-text"><small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small></p>
+                                        </div>
+                                        <img class="card-img-top" src="../assets/images/gallery/8.jpg" alt="" />
+                                    
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card mb-3&quot;&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/10.jpg&quot; alt=&quot;&quot; /&gt;
+
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+            &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+            &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/8.jpg&quot; alt=&quot;&quot; /&gt;
+
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="image-overlays">پوشش های تصویر</h3>
+                                <p>یک تصویر را به پس‌زمینه کارت تبدیل کنید و روی متن کارت خود قرار دهید. بسته به تصویر، ممکن است به سبک ها یا ابزارهای اضافی نیاز داشته باشید یا نباشید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img-top" src="../assets/images/gallery/2.jpg" alt="" />
+                                    
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">عنوان کارت</h5>
+                                            <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                            <p class="card-text">آخرین به روز رسانی 3 دقیقه قبل</p>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card bg-dark text-white&quot;&gt;
+        &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+
+        &lt;div class=&quot;card-img-overlay&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Last updated 3 mins ago&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                <div class="card shadow-sm p-3 mb-5">
+                                    توجه داشته باشید که محتوا نباید بزرگتر از ارتفاع تصویر باشد. اگر محتوا بزرگتر از تصویر باشد، محتوا خارج از تصویر نمایش داده می شود.
+                                </div>
+                                
+                                <h2 id="horizontal">افقی</h2>
+                                <p>با استفاده از ترکیبی از کلاس‌های شبکه و ابزار، کارت‌ها را می‌توان به صورت افقی به روشی سازگار با موبایل و پاسخگو ساخت. در مثال زیر، ناودان های توری را با حذف می کنیم <code>.g-0</code> و استفاده <code>.col-md-*</code> کلاس هایی برای افقی کردن کارت در <code>md</code> نقطه شکست بسته به محتوای کارت شما ممکن است تنظیمات بیشتری لازم باشد.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img class="card-img-top" src="../assets/images/gallery/5.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                    <p class="card-text"><small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card mb-3&quot; style=&quot;max-width: 540px;&quot;&gt;
+        &lt;div class=&quot;row g-0&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/5.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-8&quot;&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h2 id="card-styles">سبک های کارت</h2>
+                                <p>کارت‌ها شامل گزینه‌های مختلفی برای سفارشی کردن پس‌زمینه، حاشیه‌ها و رنگ آن‌ها هستند.</p>
+                                <h3 id="background-and-color">زمینه و رنگ</h3>
+                                <p>استفاده <a href="https://v5.getbootstrap.com/docs/5.0/utilities/colors/">ابزارهای متن و پس زمینه</a> برای تغییر ظاهر کارت.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-warning mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card text-body  bg-info mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت لایت</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت تاریک</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card text-white bg-primary mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Primary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card text-white bg-secondary mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Secondary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card text-white bg-success mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Success card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card text-white bg-danger mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Danger card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card bg-warning mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Warning card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card text-body  bg-info mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Info card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card bg-light mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Light card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card text-white bg-dark mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Dark card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <div class="card shadow-sm p-3">
+                                    <h5 id="conveying-meaning-to-assistive-technologies">انتقال معنا به فناوری های کمکی</h5>
+                                    <p>استفاده از رنگ برای افزودن معنی فقط یک نشانه بصری ارائه می دهد که به کاربران فناوری های کمکی - مانند صفحه خوان ها - منتقل نمی شود. اطمینان حاصل کنید که اطلاعات مشخص شده با رنگ یا از خود محتوا واضح است (مثلاً متن قابل مشاهده)، یا از طریق ابزارهای جایگزین، مانند متن اضافی پنهان شده با <code>.visually-hidden</code> کلاس.</p>
+                                </div>
+                                
+                                <h3 id="border">حاشیه</h3>
+                                <p>استفاده <a href="https://v5.getbootstrap.com/docs/5.0/utilities/borders/">تاسیسات مرزی</a> برای تغییر فقط<code>border-color</code> از یک کارت توجه داشته باشید که می توانید قرار دهید <code>.text-{color}</code> کلاس های مربوط به والدین <code>.card</code>یا زیر مجموعه ای از محتویات کارت مطابق شکل زیر.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body text-secondary">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body text-success">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-danger mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body text-danger">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت اخطار</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">عنوان کارت لایت</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">سربرگ</div>
+                                        <div class="card-body ">
+                                            <h5 class="card-title">عنوان کارت تاریک</h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card border-primary mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body text-primary&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Primary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card border-secondary mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body text-secondary&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Secondary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card border-success mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body text-success&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Success card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card border-danger mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body text-danger&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Danger card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card border-warning mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Warning card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card border-info mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Info card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card border-light mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Light card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card border-dark mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+        &lt;div class=&quot;card-body &quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Dark card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="mixins-utilities">ابزارهای کاربردی</h3>
+                                <p>همچنین می‌توانید حاشیه‌های هدر و پاورقی کارت را در صورت نیاز تغییر دهید و حتی آنها را حذف کنید <code>background-color</code> با <code>.bg-transparent</code>.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                                        <div class="card-header bg-transparent border-success">سربرگ</div>
+                                            <div class="card-body text-success">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text">چند نمونه متن کوتاه برای ساختن عنوان کارت و تشکیل بخش عمده ای از محتوای کارت.</p>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-success">پاورقی</div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card border-success mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+        &lt;div class=&quot;card-header bg-transparent border-success&quot;&gt;Header&lt;/div&gt;
+            &lt;div class=&quot;card-body text-success&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Success card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-footer bg-transparent border-success&quot;&gt;Footer&lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h2 id="card-layout">چیدمان کارت</h2>
+                                <p>بوت استرپ علاوه بر استایل دادن به محتوا در کارت ها، چند گزینه برای چیدمان سری کارت ها نیز دارد. در اين لحظه - فعلا، <strong>این گزینه های طرح هنوز پاسخگو نیستند</strong>.</p>
+                                <h3 id="card-groups">گروه های کارت</h3>
+                                <p>از گروه های کارت برای رندر کردن کارت ها به عنوان یک عنصر منفرد و متصل با ستون های عرض و ارتفاع یکسان استفاده کنید. گروه های کارت به صورت انباشته شروع می شوند و استفاده می کنند <code>display: flex;</code> برای متصل شدن با ابعاد یکنواخت از شروع <code>sm</code> نقطه شکست.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <img class="card-img-top" src="../assets/images/gallery/6.jpg" alt="" />
+                                            <div class="card-body">
+                                                <h5 class="card-title">عنوان کارت</h5>
+                                                <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                <p class="card-text"><small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="../assets/images/gallery/2.jpg" alt="" />
+                                            <div class="card-body">
+                                                <h5 class="card-title">عنوان کارت</h5>
+                                                <p class="card-text">این کارت دارای متن پشتیبان در زیر به عنوان راهنما طبیعی برای محتوای اضافی است.</p>
+                                                <p class="card-text"><small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="../assets/images/gallery/5.jpg" alt="" />
+                                            <div class="card-body">
+                                                <h5 class="card-title">عنوان کارت</h5>
+                                                <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این کارت حتی محتوای طولانی‌تری نسبت به کارت اول دارد که عملکرد ارتفاع برابر را نشان می‌دهد.</p>
+                                                <p class="card-text"><small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card-group&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/6.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/5.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <p>هنگام استفاده از گروه های کارت با پاورقی، محتوای آنها به طور خودکار ردیف می شود.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <img class="card-img-top" src="../assets/images/gallery/2.jpg" alt="" />
+                                            <div class="card-body">
+                                                <h5 class="card-title">عنوان کارت</h5>
+                                                <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="../assets/images/gallery/6.jpg" alt="" />
+                                            <div class="card-body">
+                                                <h5 class="card-title">عنوان کارت</h5>
+                                                <p class="card-text">این کارت دارای متن پشتیبان در زیر به عنوان راهنما طبیعی برای محتوای اضافی است.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="../assets/images/gallery/8.jpg" alt="" />
+                                            <div class="card-body">
+                                                <h5 class="card-title">عنوان کارت</h5>
+                                                <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این کارت حتی محتوای طولانی‌تری نسبت به کارت اول دارد که عملکرد ارتفاع برابر را نشان می‌دهد.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;card-group&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer&quot;&gt;
+                &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/6.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer&quot;&gt;
+                &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/8.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer&quot;&gt;
+                &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h3 id="grid-cards">کارت های شبکه</h3>
+                                <p>از سیستم شبکه بوت استرپ و آن استفاده کنید <a href="https://v5.getbootstrap.com/docs/5.0/layout/grid/#row-columns"><code>.row-cols</code> کلاس های</a> برای کنترل تعداد ستون‌های شبکه (که دور کارت‌های شما پیچیده شده‌اند) که در هر ردیف نشان می‌دهید. برای مثال، اینجاست <code>.row-cols-1</code> قرار دادن کارت ها روی یک ستون، و <code>.row-cols-md-2</code> تقسیم چهار کارت به عرض مساوی در چندین ردیف، از نقطه شکست متوسط به بالا.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/1.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/9.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/2.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/3.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;row row-cols-1 row-cols-md-2 g-4&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/9.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/3.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <p>آن را تغییر دهید <code>.row-cols-3</code> و چهارمین بسته بندی کارت را خواهید دید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/10.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/2.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/3.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../assets/images/gallery/9.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;row row-cols-1 row-cols-md-3 g-4&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/10.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/3.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/9.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <p>هنگامی که به ارتفاع مساوی نیاز دارید، اضافه کنید <code>.h-100</code> به کارت ها اگر به طور پیش فرض ارتفاع مساوی می خواهید، می توانید تنظیم کنید <code>$card-height: 100%</code> in Sass.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-top" src="../assets/images/gallery/1.jpg" alt="" />
+                                                    <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-top" src="../assets/images/gallery/5.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت کوتاه است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-top" src="../assets/images/gallery/7.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-top" src="../assets/images/gallery/4.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت طولانی‌تر با متن پشتیبانی در زیر به‌عنوان یک راهنما طبیعی برای محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;row row-cols-1 row-cols-md-3 g-4&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card h-100&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card h-100&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/5.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a short card.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card h-100&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/7.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card h-100&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/4.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <p>درست مانند گروه های کارت، پاورقی کارت ها به طور خودکار در یک ردیف قرار می گیرند.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-top" src="../assets/images/gallery/2.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این محتوا کمی طولانی تر است.</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-top" src="../assets/images/gallery/5.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این کارت دارای متن پشتیبان در زیر به عنوان راهنما طبیعی برای محتوای اضافی است.</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-top" src="../assets/images/gallery/6.jpg" alt="" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">عنوان کارت</h5>
+                                                    <p class="card-text">این یک کارت گسترده تر با متن پشتیبانی در زیر به عنوان یک راهنما طبیعی به محتوای اضافی است. این کارت حتی محتوای طولانی‌تری نسبت به کارت اول دارد که عملکرد ارتفاع برابر را نشان می‌دهد.</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">آخرین به روز رسانی 3 دقیقه قبل</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div class=&quot;row row-cols-1 row-cols-md-3 g-4&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card h-100&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-footer&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card h-100&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/5.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-footer&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;card h-100&quot;&gt;
+                &lt;img class=&quot;card-img-top&quot; src=&quot;../assets/images/gallery/6.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-footer&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h3 id="masonry">سنگ تراشی</h3>
+                                <p>در <code>v4</code> ما از یک تکنیک فقط CSS برای تقلید رفتار استفاده کردیم <a href="https://masonry.desandro.com/">سنگ تراشی</a>-مانند ستون ها، اما این تکنیک با بسیاری از موارد ناخوشایند همراه بود <a href="https://github.com/twbs/bootstrap/pull/28922">اثرات جانبی</a>. اگر می خواهید این نوع چیدمان را داشته باشید <code>v5</code>، فقط می توانید از افزونه masonry استفاده کنید. <strong>سنگ تراشی در بوت استرپ گنجانده نشده است</strong>، اما ما یک <a href="https://v5.getbootstrap.com/docs/5.0/examples/masonry/">نمونه آزمایشی</a> برای کمک به شما برای شروع.</p>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 d-none d-sm-block">
+                                <div class="sticky-lg-top">
+                                    <strong class="d-block h6 my-2 pb-2 border-bottom">در این صفحه</strong>
+                                    <nav class="color-bg-200 py-3">
+                                        <ul class="side-navbar">
+                                            <li><a href="#about">درباره</a></li>
+                                            <li><a href="#example">نمونه</a></li>
+                                            <li><a href="#content-types">انواع محتوا</a>
+                                                <ul>
+                                                    <li><a href="#body">بدنه</a></li>
+                                                    <li><a href="#titles-text-and-links">عناوین، متن و پیوندها</a></li>
+                                                    <li><a href="#images">تصاویر</a></li>
+                                                    <li><a href="#list-groups">لیست کردن گروه ها</a></li>
+                                                    <li><a href="#kitchen-sink">سینک آشپزخانه</a></li>
+                                                    <li><a href="#header-and-footer">سربرگ و پاورقی</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#sizing">سایز بندی</a>
+                                                <ul>
+                                                    <li><a href="#using-grid-markup">استفاده از نشانه گذاری شبکه</a></li>
+                                                    <li><a href="#using-utilities">با استفاده از خدمات شهری</a></li>
+                                                    <li><a href="#using-custom-css">استفاده از CSS سفارشی</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#text-alignment">تراز متن</a></li>
+                                            <li><a href="#navigation">جهت یابی</a></li>
+                                            <li><a href="#images-1">تصاویر</a>
+                                                <ul>
+                                                    <li><a href="#image-caps">سرپوش های تصویری</a></li>
+                                                    <li><a href="#image-overlays">پوشش های تصویر</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#horizontal">افقی</a></li>
+                                            <li><a href="#card-styles">سبک های کارت</a>
+                                                <ul>
+                                                    <li><a href="#background-and-color">زمینه و رنگ</a></li>
+                                                    <li><a href="#border">حاشیه</a></li>
+                                                    <li><a href="#mixins-utilities">ابزارهای کاربردی </a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#card-layout">چیدمان کارت</a>
+                                                <ul>
+                                                    <li><a href="#card-groups">گروه های کارت</a></li>
+                                                    <li><a href="#grid-cards">کارت های شبکه</a></li>
+                                                    <li><a href="#masonry">سنگ تراشی</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> <!-- Row end  -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Custom Settings-->
+            <div class="modal fade right" id="Settingmodal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog  modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">تنظیمات سفارشی</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+                        </div>
+                        <div class="modal-body custom_setting">
+                            <!-- Settings: Color -->
+                            <div class="setting-theme pb-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-color-bucket fs-4 me-2 text-primary"></i>تنظیمات رنگ قالب</h6>
+                                <ul class="list-unstyled row row-cols-3 g-2 choose-skin mb-2 mt-2">
+                                    <li data-theme="indigo"><div class="indigo"></div></li>
+                                    <li data-theme="tradewind"><div class="tradewind"></div></li>
+                                    <li data-theme="monalisa"><div class="monalisa"></div></li>
+                                    <li data-theme="blue" class="active"><div class="blue"></div></li>
+                                    <li data-theme="cyan"><div class="cyan"></div></li>
+                                    <li data-theme="green"><div class="green"></div></li>
+                                    <li data-theme="orange"><div class="orange"></div></li>
+                                    <li data-theme="blush"><div class="blush"></div></li>
+                                    <li data-theme="red"><div class="red"></div></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-gradient py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-paint fs-4 me-2 text-primary"></i>گرادیان نوار کناری</h6>
+                                <div class="form-check form-switch gradient-switch pt-2 mb-2">
+                                    <input class="form-check-input" type="checkbox" id="CheckGradient">
+                                    <label class="form-check-label" for="CheckGradient">فعال کردن گرادیان! ( نوار کناری )</label>
+                                </div>
+                            </div>
+                            <!-- Settings: Template dynamics -->
+                            <div class="dynamic-block py-3">
+                                <ul class="list-unstyled choose-skin mb-2 mt-1">
+                                    <li data-theme="dynamic"><div class="dynamic"><i class="icofont-paint me-2"></i> برای تنظیمات پویا کلیک کنید</div></li>
+                                </ul>
+                                <div class="dt-setting">
+                                    <ul class="list-group list-unstyled mt-1">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ اصلی</label>
+                                            <button id="primaryColorPicker" class="btn bg-primary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ ثانویه</label>
+                                            <button id="secondaryColorPicker" class="btn bg-secondary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 1</label>
+                                            <button id="chartColorPicker1" class="btn chart-color1 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 2</label>
+                                            <button id="chartColorPicker2" class="btn chart-color2 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 3</label>
+                                            <button id="chartColorPicker3" class="btn chart-color3 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 4</label>
+                                            <button id="chartColorPicker4" class="btn chart-color4 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 5</label>
+                                            <button id="chartColorPicker5" class="btn chart-color5 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Settings: Font -->
+                            <div class="setting-font py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-font fs-4 me-2 text-primary"></i> تنظیمات فونت</h6>
+                                <ul class="list-group font_setting mt-1">
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-poppins" value="font-poppins">
+                                            <label class="form-check-label" for="font-poppins">
+                                                فونت گوگل پاپینس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-opensans" value="font-opensans" checked="">
+                                            <label class="form-check-label" for="font-opensans">
+                                                فونت گوگل اوپن سانس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-montserrat" value="font-montserrat">
+                                            <label class="form-check-label" for="font-montserrat">
+                                                فونت گوگل مونت
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-mukta" value="font-mukta">
+                                            <label class="form-check-label" for="font-mukta">
+                                                فونت گوگل موتکا
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Settings: Light/dark -->
+                            <div class="setting-mode py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-layout fs-4 me-2 text-primary"></i>چیدمان کنتراست</h6>
+                                <ul class="list-group list-unstyled mb-0 mt-1">
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-switch mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-switch">
+                                            <label class="form-check-label" for="theme-switch">فعال کردن حالت تاریک!</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-high-contrast mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                            <label class="form-check-label" for="theme-high-contrast">فعال کردن کنتراست بالا</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-rtl mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-rtl">
+                                            <label class="form-check-label" for="theme-rtl">فعال کردن حالت چپ چین!</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-start">
+                            <button type="button" class="btn btn-white border lift" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary lift">ذخیره تنظبمات</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../assets/bundles/libscripts.bundle.js"></script>
+
+    <!-- Prism js file please do not add in your project -->
+    <script src="../assets/plugin/prism/prism.js"></script>
+
+    <!-- Jquery Page Js -->
+    <script src="../../js/template.js"></script>
+</body>
+
+</html>

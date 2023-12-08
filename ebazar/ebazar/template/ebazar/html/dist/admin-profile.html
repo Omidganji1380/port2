@@ -1,0 +1,1028 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>::eBazar::  Admin Profile </title>   
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="assets/css/ebazar.style.min.css">
+</head>
+<body class="rtl_mode" style>
+    <div id="ebazar-layout" class="theme-blue">
+        
+        <!-- sidebar -->
+        <div class="sidebar px-4 py-4 py-md-5 me-0">
+            <div class="d-flex flex-column h-100">
+                <a href="index.html" class="mb-0 brand-icon">
+                    <span class="logo-icon">
+                        <i class="bi bi-bag-check-fill fs-4"></i>
+                    </span>
+                    <span class="logo-text">ای بازار</span>
+                </a>
+                <!-- Menu: main ul -->
+                <ul class="menu-list flex-grow-1 mt-3">
+                    <li><a class="m-link" href="index.html"><i class="icofont-home fs-5"></i> <span>داشبورد</span></a></li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-product" href="#">
+                            <i class="icofont-truck-loaded fs-5"></i> <span>محصولات</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                            <!-- Menu: Sub menu ul -->
+                            <ul class="sub-menu collapse" id="menu-product">
+                                <li><a class="ms-link" href="product-grid.html">گرید محصول</a></li>
+                                <li><a class="ms-link" href="product-list.html">لیست محصول</a></li>
+                                <li><a class="ms-link" href="product-edit.html">ویرایش محصول</a></li>
+                                <li><a class="ms-link" href="product-detail.html">جزئیات محصول</a></li>
+                                <li><a class="ms-link" href="product-add.html">افزودن محصول</a></li>
+                                <li><a class="ms-link" href="product-cart.html">سبد خرید</a></li>
+                                <li><a class="ms-link" href="checkout.html">پرداخت</a></li>
+                            </ul>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#categories" href="#">
+                            <i class="icofont-chart-flow fs-5"></i> <span>دسته بندی ها</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                            <!-- Menu: Sub menu ul -->
+                            <ul class="sub-menu collapse" id="categories">
+                                <li><a class="ms-link" href="categorie-list.html">لیست دسته بندی ها</a></li>
+                                <li><a class="ms-link" href="categories-edit.html">ویرایش دسته بندی ها</a></li>
+                                <li><a class="ms-link" href="categories-add.html">اضاف دسته بندی ها</a></li>
+                            </ul>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-order" href="#">
+                        <i class="icofont-notepad fs-5"></i> <span>سفارشات</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="menu-order">
+                            <li><a class="ms-link" href="order-list.html">لیست سفارشات</a></li>
+                            <li><a class="ms-link" href="order-details.html">جزئیات سفارش</a></li>
+                            <li><a class="ms-link" href="order-invoices.html">فاکتورهای سفارش</a></li>
+                        </ul>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#customers-info" href="#">
+                        <i class="icofont-funky-man fs-5"></i> <span>مشتریان</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="customers-info">
+                            <li><a class="ms-link" href="customers.html">لیست مشتریان</a></li>
+                            <li><a class="ms-link" href="customer-detail.html">جزئیات مشتریان</a></li>
+                        </ul>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-sale" href="#">
+                        <i class="icofont-sale-discount fs-5"></i> <span>تبلیغات فروش</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="menu-sale">
+                            <li><a class="ms-link" href="coupons-list.html">لیست کوپن ها</a></li>
+                            <li><a class="ms-link" href="coupon-add.html">اضاف کوپن ها</a></li>
+                            <li><a class="ms-link" href="coupon-edit.html">ویرایش کوپن ها</a></li>
+                        </ul>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-inventory" href="#">
+                        <i class="icofont-chart-histogram fs-5"></i> <span>موجودی کالا</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="menu-inventory">
+                            <li><a class="ms-link" href="inventory-info.html">لیست موجودی</a></li>
+                            <li><a class="ms-link" href="purchase.html">خرید شده</a></li>
+                            <li><a class="ms-link" href="supplier.html">تامین کننده</a></li>
+                            <li><a class="ms-link" href="returns.html">برگشتی ها</a></li>
+                            <li><a class="ms-link" href="department.html">بخش</a></li>
+                        </ul>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Componentsone" href="#"><i
+                                class="icofont-ui-calculator"></i> <span>حساب ها</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="menu-Componentsone">
+                            <li><a class="ms-link" href="invoices.html">صورتحساب ها </a></li>
+                            <li><a class="ms-link" href="expenses.html">هزینه ها </a></li>
+                            <li><a class="ms-link" href="salaryslip.html">فیش حقوقی </a></li>
+                        </ul>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#app" href="#">
+                        <i class="icofont-code-alt fs-5"></i> <span>اپلیکیشن</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="app">
+                            <li><a class="ms-link" href="calendar.html">تقویم</a></li>
+                            <li><a class="ms-link" href="chat.html"> اپ چت</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="store-locator.html"><i class="icofont-focus fs-5"></i> <span>فروشگاه یاب</span></a></li>
+                    <li><a class="m-link" href="ui-elements/ui-alerts.html"><i class="icofont-paint fs-5"></i> <span>اجزای رابط کاربری</span></a></li>
+                    <li class="collapsed">
+                        <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#page" href="#">
+                        <i class="icofont-page fs-5"></i> <span>صفحات دیگر</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse show" id="page">
+                            <li><a class="ms-link active" href="admin-profile.html">صفحه پروفایل</a></li>
+                            <li><a class="ms-link" href="purchase-plan.html">مثال طرح قیمت</a></li>
+                            <li><a class="ms-link" href="charts.html">مثال نمودارها</a></li>
+                            <li><a class="ms-link" href="table.html">مثال جدول</a></li>
+                            <li><a class="ms-link" href="forms.html">مثال فرم ها</a></li>
+                            <li><a class="ms-link" href="icon.html">آیکون ها</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Menu: menu collepce btn -->
+                <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                    <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+                </button>
+            </div>
+        </div>  
+
+        <!-- main body area -->
+        <div class="main px-lg-4 px-md-4">
+
+            <!-- Body: Header -->
+            <div class="header">
+                <nav class="navbar py-4">
+                    <div class="container-xxl">
+        
+                        <!-- header rightbar icon -->
+                        <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+                            <div class="d-flex">
+                                <a class="nav-link text-primary collapsed" href="help.html" title="Get Help">
+                                    <i class="icofont-info-square fs-5"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown zindex-popover">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <img src="assets/images/flag/GB.png" alt="">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3">
+                                    <div class="card border-0">
+                                        <ul class="list-unstyled py-2 px-3">
+                                            <li>
+                                                <a href="#" class=""><img src="assets/images/flag/GB.png" alt=""> انگلیسی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="assets/images/flag/DE.png" alt=""> آلمانی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="assets/images/flag/FR.png" alt=""> فرانسوی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="assets/images/flag/IT.png" alt=""> ایتالیایی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="assets/images/flag/RU.png" alt=""> روسی</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown notifications">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="icofont-alarm fs-5"></i>
+                                    <span class="pulse-ring"></span>
+                                </a>
+                                <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3">
+                                    <div class="card border-0 w380">
+                                        <div class="card-header border-0 p-3">
+                                            <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                                <span>اعلان ها</span>
+                                                <span class="badge text-white">06</span>
+                                            </h5>
+                                        </div>
+                                        <div class="tab-content card-body">
+                                            <div class="tab-pane fade show active">
+                                                <ul class="list-unstyled list mb-0">
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="assets/images/xs/avatar1.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>2مین</small></p>
+                                                                <span class="">محصول جدید اضافه شد 2021-07-15 <span class="badge bg-success">اضاف</span></span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <div class="avatar rounded-circle no-thumbnail">AH</div>
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">تولید کننده فاکتور </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="assets/images/xs/avatar3.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">برگشت سفارش RT-00004</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="assets/images/xs/avatar5.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">سفارش محصول به اسباب بازی فروشی</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="assets/images/xs/avatar6.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">رد تایید</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="assets/images/xs/avatar7.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small class="">1روز</small></p>
+                                                                <span class="">ورود محصول استوک به روز شد</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="card-footer text-center border-top-0" href="#"> مشاهده تمام اعلان ها</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
+                                <div class="u-info me-2">
+                                    <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">آرش خادملو</span></p>
+                                    <small>مشخصات مدیر</small>
+                                </div>
+                                <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static">
+                                    <img class="avatar lg rounded-circle img-thumbnail" src="assets/images/profile_av.svg" alt="profile">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                                    <div class="card border-0 w280">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex py-1">
+                                                <img class="avatar rounded-circle" src="assets/images/profile_av.svg" alt="profile">
+                                                <div class="flex-fill ms-3">
+                                                    <p class="mb-0"><span class="font-weight-bold">آرش خادملو</span></p>
+                                                    <small class="">Johnquinn@gmail.com</small>
+                                                </div>
+                                            </div>
+                                            
+                                            <div><hr class="dropdown-divider border-dark"></div>
+                                        </div>
+                                        <div class="list-group m-2 ">
+                                            <a href="admin-profile.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-ui-user fs-5 me-3"></i>صفحه پروفایل</a>
+                                            <a href="order-invoices.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-file-text fs-5 me-3"></i>سفارش فاکتورها</a>
+                                            <a href="ui-elements/auth-signin.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-logout fs-5 me-3"></i>خروج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting ms-2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
+                            </div>
+                        </div>
+        
+                        <!-- menu toggler -->
+                        <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                            <span class="fa fa-bars"></span>
+                        </button>
+        
+                        <!-- main menu Search-->
+                        <div class="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
+                            <div class="input-group flex-nowrap input-group-lg">
+                                <input type="search" class="form-control" placeholder="جستجو" aria-label="search" aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
+                                
+                            </div>
+                        </div>
+        
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Body: Body -->
+            <div class="body d-flex py-3">
+                <div class="container-xxl">
+                    <div class="row align-items-center">
+                        <div class="border-0 mb-4">
+                            <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
+                                <h3 class="fw-bold mb-0">مشخصات مدیر</h3>
+                            </div>
+                        </div>
+                    </div> <!-- Row end  -->
+                    <div class="row g-3">
+                        <div class="col-xl-4 col-lg-5 col-md-12">
+                            <div class="card profile-card flex-column mb-3">
+                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold ">مشخصات</h6>
+                                </div>
+                                <div class="card-body d-flex profile-fulldeatil flex-column">
+                                    <div class="profile-block text-center w220 mx-auto">
+                                        <a href="#">
+                                            <img src="assets/images/lg/avatar4.svg" alt="" class="avatar xl rounded img-thumbnail shadow-sm">
+                                        </a>
+                                        <button class="btn btn-primary" style="position: absolute;top:15px;left: 15px;" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="icofont-edit"></i></button>
+                                        <div class="about-info d-flex align-items-center mt-3 justify-content-center flex-column">
+                                            <span class="text-muted small">شناسه مدیر : PXL-0001</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-info w-100">
+                                        <h6  class="mb-0 mt-2  fw-bold d-block fs-6 text-center">آرش خادملو</h6>
+                                        <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted text-center mx-auto d-block">24 سال ، کالیفرنیا</span>
+                                        <p class="mt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                        <div class="row g-2 pt-2">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-ui-touch-phone"></i>
+                                                    <span class="ms-2">202-555-0174 </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-email"></i>
+                                                    <span class="ms-2">adrianallan@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-birthday-cake"></i>
+                                                    <span class="ms-2">19/03/1980</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-address-book"></i>
+                                                    <span class="ms-2">2734 خیابان چنگال غربی ، شرق 02334.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold ">روش پرداخت</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="payment-info">
+                                        <h5 class="payment-name text-muted"><i class="icofont-visa-alt fs-3"></i> ویزا *******7548</h5>
+                                        <span>صورتحساب بعدی شارژ شد 48 تومان</span>
+                                        <br>
+                                        <em class="text-muted">پرداخت خودکار در 20 جولای 2021</em>
+                                        <a href="javascript:void(0);" class="edit-payment-info text-secondary">ویرایش اطلاعات پرداخت</a>
+                                    </div>
+                                    <p class="mt-3"><a href="javascript:void(0);" class="btn btn-primary"> افزودن اطلاعات پرداخت</a></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>تنظیمات اعلان</h5>
+                                    <span class="text-muted">تمام خبرنامه و اعلان های مربوط به ایمیل ما را به ایمیل خود کنترل کنید</span>
+                                    <div class="mt-4">
+                                        <div class="form-check form-switch mt-2">
+                                            <input class="form-check-input" type="checkbox" id="np-Newsletter">
+                                            <label class="form-check-label" for="np-Newsletter">اعلان های فعالیت</label>
+                                        </div>
+                                        <div class="form-check form-switch mt-2">
+                                            <input class="form-check-input" type="checkbox" id="np-Notifications">
+                                            <label class="form-check-label" for="np-Notifications">اعلان های نظر</label>
+                                        </div>
+                                        <div class="form-check form-switch mt-2">
+                                            <input class="form-check-input" type="checkbox" id="np-Preferences" checked="">
+                                            <label class="form-check-label" for="np-Preferences">تنظیمات ایمیل</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7 col-md-12">
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold ">تنظیمات نمایه</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form class="row g-4">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label">نام کاربر</label>
+                                                <input class="form-control"  type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label">رمز عبور</label>
+                                                <input class="form-control" type="Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">نام شرکت <span class="text-danger">*</span></label>
+                                                <input class="form-control" type="text" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">فرد تماس</label>
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">شماره موبایل <span class="text-danger">*</span></label>
+                                                <input class="form-control"  type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label">آدرس</label>
+                                                <textarea class="form-control"  aria-label="با محدوده متن"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="form-label">ایمیل <span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">@</span>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="form-label">آدرس وب سایت</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">http://</span>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <div class="form-group">
+                                                <label class="form-label">کشور</label>
+                                                <select class="form-control">
+                                                    <option value="">-- انتخاب کشور --</option>
+                                                    <option value="AF">نمونه کشور1</option>
+                                                    <option value="AX">نمونه کشور1</option>
+                                                    <option value="AL">نمونه کشور1</option>
+                                                    <option value="DZ">نمونه کشور1</option>
+                                                    <option value="AS">نمونه کشور1</option>
+                                                    <option value="AD">نمونه کشور1</option>
+                                                    <option value="AO">نمونه کشور1</option>
+                                                    <option value="AI">نمونه کشور1</option>
+                                                    <option value="AQ">نمونه کشور1</option>
+                                                    <option value="AG">نمونه کشور1</option>
+                                                    <option value="AR">نمونه کشور1</option>
+                                                    <option value="AM">نمونه کشور1</option>
+                                                    <option value="AW">نمونه کشور1</option>
+                                                    <option value="AU">نمونه کشور1</option>
+                                                    <option value="AT">نمونه کشور1</option>
+                                                    <option value="AZ">نمونه کشور1</option>
+                                                    <option value="BS">نمونه کشور1</option>
+                                                    <option value="BH">نمونه کشور1</option>
+                                                    <option value="BD">نمونه کشور1</option>
+                                                    <option value="BB">نمونه کشور1</option>
+                                                    <option value="BY">نمونه کشور1</option>
+                                                    <option value="BE">نمونه کشور1</option>
+                                                    <option value="BZ">نمونه کشور1</option>
+                                                    <option value="BJ">نمونه کشور1</option>
+                                                    <option value="BM">نمونه کشور1</option>
+                                                    <option value="BT">نمونه کشور1</option>
+                                                    <option value="BO">نمونه کشور1</option>
+                                                    <option value="BQ">نمونه کشور1</option>
+                                                    <option value="BA">نمونه کشور1</option>
+                                                    <option value="BW">نمونه کشور1</option>
+                                                    <option value="BV">نمونه کشور1</option>
+                                                    <option value="BR">نمونه کشور1</option>
+                                                    <option value="IO">نمونه کشور1</option>
+                                                    <option value="BN">نمونه کشور1</option>
+                                                    <option value="BG">نمونه کشور1</option>
+                                                    <option value="BF">نمونه کشور1</option>
+                                                    <option value="BI">نمونه کشور1</option>
+                                                    <option value="KH">نمونه کشور1</option>
+                                                    <option value="CM">نمونه کشور1</option>
+                                                    <option value="CA">نمونه کشور1</option>
+                                                    <option value="CV">نمونه کشور1</option>
+                                                    <option value="KY">نمونه کشور1</option>
+                                                    <option value="CF">نمونه کشور1</option>
+                                                    <option value="TD">نمونه کشور1</option>
+                                                    <option value="CL">نمونه کشور1</option>
+                                                    <option value="CN">نمونه کشور1</option>
+                                                    <option value="CX">نمونه کشور1</option>
+                                                    <option value="CC">نمونه کشور1</option>
+                                                    <option value="CO">نمونه کشور1</option>
+                                                    <option value="KM">نمونه کشور1</option>
+                                                    <option value="CG">نمونه کشور1</option>
+                                                    <option value="CD">نمونه کشور1</option>
+                                                    <option value="CK">نمونه کشور1</option>
+                                                    <option value="CR">نمونه کشور1</option>
+                                                    <option value="CI">نمونه کشور1</option>
+                                                    <option value="HR">نمونه کشور1</option>
+                                                    <option value="CU">نمونه کشور1</option>
+                                                    <option value="CW">نمونه کشور1</option>
+                                                    <option value="CY">نمونه کشور1</option>
+                                                    <option value="CZ">نمونه کشور1</option>
+                                                    <option value="DK">نمونه کشور1</option>
+                                                    <option value="DJ">نمونه کشور1</option>
+                                                    <option value="DM">نمونه کشور1</option>
+                                                    <option value="DO">نمونه کشور1</option>
+                                                    <option value="EC">نمونه کشور1</option>
+                                                    <option value="EG">نمونه کشور1</option>
+                                                    <option value="SV">نمونه کشور1</option>
+                                                    <option value="GQ">نمونه کشور1</option>
+                                                    <option value="ER">نمونه کشور1</option>
+                                                    <option value="EE">نمونه کشور1</option>
+                                                    <option value="ET">نمونه کشور1</option>
+                                                    <option value="FK">نمونه کشور1</option>
+                                                    <option value="FO">نمونه کشور1</option>
+                                                    <option value="FJ">نمونه کشور1</option>
+                                                    <option value="FI">نمونه کشور1</option>
+                                                    <option value="FR">نمونه کشور1</option>
+                                                    <option value="GF">نمونه کشور1</option>
+                                                    <option value="PF">نمونه کشور1</option>
+                                                    <option value="TF">نمونه کشور1</option>
+                                                    <option value="GA">نمونه کشور1</option>
+                                                    <option value="GM">نمونه کشور1</option>
+                                                    <option value="GE">نمونه کشور1</option>
+                                                    <option value="DE">نمونه کشور1</option>
+                                                    <option value="GH">نمونه کشور1</option>
+                                                    <option value="GI">نمونه کشور1</option>
+                                                    <option value="GR">نمونه کشور1</option>
+                                                    <option value="GL">نمونه کشور1</option>
+                                                    <option value="GD">نمونه کشور1</option>
+                                                    <option value="GP">نمونه کشور1</option>
+                                                    <option value="GU">نمونه کشور1</option>
+                                                    <option value="GT">نمونه کشور1</option>
+                                                    <option value="GG">نمونه کشور1</option>
+                                                    <option value="GN">نمونه کشور1</option>
+                                                    <option value="GW">نمونه کشور1</option>
+                                                    <option value="GY">نمونه کشور1</option>
+                                                    <option value="HT">نمونه کشور1</option>
+                                                    <option value="HM">نمونه کشور1</option>
+                                                    <option value="VA">نمونه کشور1</option>
+                                                    <option value="HN">نمونه کشور1</option>
+                                                    <option value="HK">نمونه کشور1</option>
+                                                    <option value="HU">نمونه کشور1</option>
+                                                    <option value="IS">نمونه کشور1</option>
+                                                    <option value="IN">نمونه کشور1</option>
+                                                    <option value="ID">نمونه کشور1</option>
+                                                    <option value="IR">نمونه کشور1</option>
+                                                    <option value="IQ">نمونه کشور1</option>
+                                                    <option value="IE">نمونه کشور1</option>
+                                                    <option value="IM">نمونه کشور1</option>
+                                                    <option value="IL">نمونه کشور1</option>
+                                                    <option value="IT">نمونه کشور1</option>
+                                                    <option value="JM">نمونه کشور1</option>
+                                                    <option value="JP">نمونه کشور1</option>
+                                                    <option value="JE">نمونه کشور1</option>
+                                                    <option value="JO">نمونه کشور1</option>
+                                                    <option value="KZ">نمونه کشور1</option>
+                                                    <option value="KE">نمونه کشور1</option>
+                                                    <option value="KI">نمونه کشور1</option>
+                                                    <option value="KP">نمونه کشور1</option>
+                                                    <option value="KR">نمونه کشور1</option>
+                                                    <option value="KW">نمونه کشور1</option>
+                                                    <option value="KG">نمونه کشور1</option>
+                                                    <option value="LA">نمونه کشور1</option>
+                                                    <option value="LV">نمونه کشور1</option>
+                                                    <option value="LB">نمونه کشور1</option>
+                                                    <option value="LS">نمونه کشور1</option>
+                                                    <option value="LR">نمونه کشور1</option>
+                                                    <option value="LY">نمونه کشور1</option>
+                                                    <option value="LI">نمونه کشور1</option>
+                                                    <option value="LT">نمونه کشور1</option>
+                                                    <option value="LU">نمونه کشور1</option>
+                                                    <option value="MO">نمونه کشور1</option>
+                                                    <option value="MK">نمونه کشور1</option>
+                                                    <option value="MG">نمونه کشور1</option>
+                                                    <option value="MW">نمونه کشور1</option>
+                                                    <option value="MY">نمونه کشور1</option>
+                                                    <option value="MV">نمونه کشور1</option>
+                                                    <option value="ML">نمونه کشور1</option>
+                                                    <option value="MT">نمونه کشور1</option>
+                                                    <option value="MH">نمونه کشور1</option>
+                                                    <option value="MQ">نمونه کشور1</option>
+                                                    <option value="MR">نمونه کشور1</option>
+                                                    <option value="MU">نمونه کشور1</option>
+                                                    <option value="YT">نمونه کشور1</option>
+                                                    <option value="MX">نمونه کشور1</option>
+                                                    <option value="FM">نمونه کشور1</option>
+                                                    <option value="MD">نمونه کشور1</option>
+                                                    <option value="MC">نمونه کشور1</option>
+                                                    <option value="MN">نمونه کشور1</option>
+                                                    <option value="ME">نمونه کشور1</option>
+                                                    <option value="MS">نمونه کشور1</option>
+                                                    <option value="MA">نمونه کشور1</option>
+                                                    <option value="MZ">نمونه کشور1</option>
+                                                    <option value="MM">نمونه کشور1</option>
+                                                    <option value="NA">نمونه کشور1</option>
+                                                    <option value="NR">نمونه کشور1</option>
+                                                    <option value="NP">نمونه کشور1</option>
+                                                    <option value="NL">نمونه کشور1</option>
+                                                    <option value="NC">نمونه کشور1</option>
+                                                    <option value="NZ">نمونه کشور1</option>
+                                                    <option value="NI">نمونه کشور1</option>
+                                                    <option value="NE">نمونه کشور1</option>
+                                                    <option value="NG">نمونه کشور1</option>
+                                                    <option value="NU">نمونه کشور1</option>
+                                                    <option value="NF">نمونه کشور1</option>
+                                                    <option value="MP">نمونه کشور1</option>
+                                                    <option value="NO">نمونه کشور1</option>
+                                                    <option value="OM">نمونه کشور1</option>
+                                                    <option value="PK">نمونه کشور1</option>
+                                                    <option value="PW">نمونه کشور1</option>
+                                                    <option value="PS">نمونه کشور1</option>
+                                                    <option value="PA">نمونه کشور1</option>
+                                                    <option value="PG">نمونه کشور1</option>
+                                                    <option value="PY">نمونه کشور1</option>
+                                                    <option value="PE">نمونه کشور1</option>
+                                                    <option value="PH">نمونه کشور1</option>
+                                                    <option value="PN">نمونه کشور1</option>
+                                                    <option value="PL">نمونه کشور1</option>
+                                                    <option value="PT">نمونه کشور1</option>
+                                                    <option value="PR">نمونه کشور1</option>
+                                                    <option value="QA">نمونه کشور1</option>
+                                                    <option value="RE">نمونه کشور1</option>
+                                                    <option value="RO">نمونه کشور1</option>
+                                                    <option value="RU">نمونه کشور1</option>
+                                                    <option value="RW">نمونه کشور1</option>
+                                                    <option value="BL">نمونه کشور1</option>
+                                                    <option value="SH">نمونه کشور1</option>
+                                                    <option value="KN">نمونه کشور1</option>
+                                                    <option value="LC">نمونه کشور1</option>
+                                                    <option value="MF">نمونه کشور1</option>
+                                                    <option value="PM">نمونه کشور1</option>
+                                                    <option value="VC">نمونه کشور1</option>
+                                                    <option value="WS">نمونه کشور1</option>
+                                                    <option value="SM">نمونه کشور1</option>
+                                                    <option value="ST">نمونه کشور1</option>
+                                                    <option value="SA">نمونه کشور1</option>
+                                                    <option value="SN">نمونه کشور1</option>
+                                                    <option value="RS">نمونه کشور1</option>
+                                                    <option value="SC">نمونه کشور1</option>
+                                                    <option value="SL">نمونه کشور1</option>
+                                                    <option value="SG">نمونه کشور1</option>
+                                                    <option value="SX">نمونه کشور1</option>
+                                                    <option value="SK">نمونه کشور1</option>
+                                                    <option value="SI">نمونه کشور1</option>
+                                                    <option value="SB">نمونه کشور1</option>
+                                                    <option value="SO">نمونه کشور1</option>
+                                                    <option value="ZA">نمونه کشور1</option>
+                                                    <option value="GS">نمونه کشور1</option>
+                                                    <option value="SS">نمونه کشور1</option>
+                                                    <option value="ES">نمونه کشور1</option>
+                                                    <option value="LK">نمونه کشور1</option>
+                                                    <option value="SD">نمونه کشور1</option>
+                                                    <option value="SR">نمونه کشور1</option>
+                                                    <option value="SJ">نمونه کشور1</option>
+                                                    <option value="SZ">نمونه کشور1</option>
+                                                    <option value="SE">نمونه کشور1</option>
+                                                    <option value="CH">نمونه کشور1</option>
+                                                    <option value="SY">نمونه کشور1</option>
+                                                    <option value="TW">نمونه کشور1</option>
+                                                    <option value="TJ">نمونه کشور1</option>
+                                                    <option value="TZ">نمونه کشور1</option>
+                                                    <option value="TH">نمونه کشور1</option>
+                                                    <option value="TL">نمونه کشور1</option>
+                                                    <option value="TG">نمونه کشور1</option>
+                                                    <option value="TK">نمونه کشور1</option>
+                                                    <option value="TO">نمونه کشور1</option>
+                                                    <option value="TT">نمونه کشور1</option>
+                                                    <option value="TN">نمونه کشور1</option>
+                                                    <option value="TR">نمونه کشور1</option>
+                                                    <option value="TM">نمونه کشور1</option>
+                                                    <option value="TC">نمونه کشور1</option>
+                                                    <option value="TV">نمونه کشور1</option>
+                                                    <option value="UG">نمونه کشور1</option>
+                                                    <option value="UA">نمونه کشور1</option>
+                                                    <option value="AE">نمونه کشور1</option>
+                                                    <option value="GB">نمونه کشور1</option>
+                                                    <option value="US">نمونه کشور1</option>
+                                                    <option value="UM">نمونه کشور1</option>
+                                                    <option value="UY">نمونه کشور1</option>
+                                                    <option value="UZ">نمونه کشور1</option>
+                                                    <option value="VU">نمونه کشور1</option>
+                                                    <option value="VE">نمونه کشور1</option>
+                                                    <option value="VN">نمونه کشور1</option>
+                                                    <option value="VG">نمونه کشور1</option>
+                                                    <option value="VI">نمونه کشور1</option>
+                                                    <option value="WF">نمونه کشور1</option>
+                                                    <option value="EH">نمونه کشور1</option>
+                                                    <option value="YE">نمونه کشور1</option>
+                                                    <option value="ZM">نمونه کشور1</option>
+                                                    <option value="ZW">نمونه کشور1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <div class="form-group">
+                                                <label class="form-label">ایالت/استان</label>
+                                                <select class="form-control">
+                                                    <option>کالیفرنیا</option>
+                                                    <option>کالیفرنیا</option>
+                                                    <option>Alabama</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <div class="form-group">
+                                                <label class="form-label">شهر</label>
+                                                <input class="form-control"  type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <div class="form-group">
+                                                <label class="form-label">کد پستی</label>
+                                                <input class="form-control"  type="text">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 mt-4">
+                                            <button type="button" class="btn btn-primary text-uppercase px-5">ذخیره</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card auth-detailblock">
+                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold ">جزئیات احراز هویت</h6>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#authchange"><i class="icofont-edit"></i></button>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label class="form-label col-6 col-sm-5">نام کاربر :</label>
+                                            <span><strong>Adrian007</strong></span>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label col-6 col-sm-5">رمز عبور ورود :</label>
+                                            <span><strong>Abc*******</strong></span>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label col-6 col-sm-5">آخرین ورود:</label>
+                                            <span><strong>128.456.89 (اپل) سافاری</strong></span>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label col-6 col-sm-5">آخرین تغییر رمز عبور:</label>
+                                            <span><strong>3 ماه پیش</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal Custom Settings-->
+            <div class="modal fade right" id="Settingmodal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog  modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">تنظیمات سفارشی</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+                        </div>
+                        <div class="modal-body custom_setting">
+                            <!-- Settings: Color -->
+                            <div class="setting-theme pb-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-color-bucket fs-4 me-2 text-primary"></i>تنظیمات رنگ قالب</h6>
+                                <ul class="list-unstyled row row-cols-3 g-2 choose-skin mb-2 mt-2">
+                                    <li data-theme="indigo"><div class="indigo"></div></li>
+                                    <li data-theme="tradewind"><div class="tradewind"></div></li>
+                                    <li data-theme="monalisa"><div class="monalisa"></div></li>
+                                    <li data-theme="blue" class="active"><div class="blue"></div></li>
+                                    <li data-theme="cyan"><div class="cyan"></div></li>
+                                    <li data-theme="green"><div class="green"></div></li>
+                                    <li data-theme="orange"><div class="orange"></div></li>
+                                    <li data-theme="blush"><div class="blush"></div></li>
+                                    <li data-theme="red"><div class="red"></div></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-gradient py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-paint fs-4 me-2 text-primary"></i>گرادیان نوار کناری</h6>
+                                <div class="form-check form-switch gradient-switch pt-2 mb-2">
+                                    <input class="form-check-input" type="checkbox" id="CheckGradient">
+                                    <label class="form-check-label" for="CheckGradient">فعال کردن گرادیان! ( نوار کناری )</label>
+                                </div>
+                            </div>
+                            <!-- Settings: Template dynamics -->
+                            <div class="dynamic-block py-3">
+                                <ul class="list-unstyled choose-skin mb-2 mt-1">
+                                    <li data-theme="dynamic"><div class="dynamic"><i class="icofont-paint me-2"></i> برای تنظیمات پویا کلیک کنید</div></li>
+                                </ul>
+                                <div class="dt-setting">
+                                    <ul class="list-group list-unstyled mt-1">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ اصلی</label>
+                                            <button id="primaryColorPicker" class="btn bg-primary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ ثانویه</label>
+                                            <button id="secondaryColorPicker" class="btn bg-secondary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 1</label>
+                                            <button id="chartColorPicker1" class="btn chart-color1 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 2</label>
+                                            <button id="chartColorPicker2" class="btn chart-color2 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 3</label>
+                                            <button id="chartColorPicker3" class="btn chart-color3 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 4</label>
+                                            <button id="chartColorPicker4" class="btn chart-color4 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 5</label>
+                                            <button id="chartColorPicker5" class="btn chart-color5 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Settings: Font -->
+                            <div class="setting-font py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-font fs-4 me-2 text-primary"></i> تنظیمات فونت</h6>
+                                <ul class="list-group font_setting mt-1">
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-poppins" value="font-poppins">
+                                            <label class="form-check-label" for="font-poppins">
+                                                فونت گوگل پاپینس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-opensans" value="font-opensans" checked="">
+                                            <label class="form-check-label" for="font-opensans">
+                                                فونت گوگل اوپن سانس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-montserrat" value="font-montserrat">
+                                            <label class="form-check-label" for="font-montserrat">
+                                                فونت گوگل مونت
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-mukta" value="font-mukta">
+                                            <label class="form-check-label" for="font-mukta">
+                                                فونت گوگل موتکا
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Settings: Light/dark -->
+                            <div class="setting-mode py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-layout fs-4 me-2 text-primary"></i>چیدمان کنتراست</h6>
+                                <ul class="list-group list-unstyled mb-0 mt-1">
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-switch mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-switch">
+                                            <label class="form-check-label" for="theme-switch">فعال کردن حالت تاریک!</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-high-contrast mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                            <label class="form-check-label" for="theme-high-contrast">فعال کردن کنتراست بالا</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-rtl mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-rtl">
+                                            <label class="form-check-label" for="theme-rtl">فعال کردن حالت چپ چین!</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-start">
+                            <button type="button" class="btn btn-white border lift" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary lift">ذخیره تنظبمات</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Edit Password-->
+            <div class="modal fade" id="authchange" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title  fw-bold" id="expeditLabel"> ویرایش هویت</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="deadline-form">
+                            <form>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-sm-6">
+                                        <label for="item1" class="form-label">نام کاربر</label>
+                                        <input type="text" class="form-control" id="item1" value="Adrian007"> 
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="taxtno111" class="form-label">رمزعبور</label>
+                                        <input type="password" class="form-control" id="taxtno111" value="abcxyzabc">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label for="taxtno11" class="form-label">تأیید رمز عبور</label>
+                                        <input type="text" class="form-control" id="taxtno11">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">تایید</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Edit profile-->
+            <div class="modal fade" id="editprofile" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title  fw-bold" id="expeditLabel1111"> ویرایش نمایه</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="deadline-form">
+                            <form>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-sm-12">
+                                        <label for="item100" class="form-label">نام</label>
+                                        <input type="text" class="form-control" id="item100" value="آرش خادملو"> 
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label for="taxtno200" class="form-label">پروفایل</label>
+                                        <input type="file" class="form-control" id="taxtno200">
+                                    </div>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-sm-12">
+                                        <label class="form-label">جزئیات</label>
+                                        <textarea class="form-control" rows="3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی.</textarea>
+                                    </div>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                <div class="col-sm-6">
+                                    <label class="form-label">کشور</label>
+                                    <input type="text" class="form-control" value="کالیفرنیا">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="abc1" class="form-label">تاریخ تولد</label>
+                                    <input type="date" class="form-control w-100" id="abc1" value="1980-03-19">
+                                </div>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-sm-6">
+                                    <label for="mailid" class="form-label">ایمیل</label>
+                                    <input type="text" class="form-control" id="mailid" value="adrianallan@gmail.com">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="phoneid" class="form-label">تلفن</label>
+                                        <input type="text" class="form-control" id="phoneid" value="202-555-0174">
+                                    </div>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-sm-12">
+                                        <label class="form-label">آدرس</label>
+                                        <textarea class="form-control" rows="3">2734 خیابان وست فورک 02334.</textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">تایید</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+
+    <!-- Jquery Page Js -->
+    <script src="../js/template.js"></script>
+ </body>
+
+</html> 

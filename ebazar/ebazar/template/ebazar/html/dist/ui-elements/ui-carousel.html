@@ -1,0 +1,1059 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>::eBazar:: Ui Carousel </title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Favicon-->
+
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="../assets/plugin/prism/prism.css">
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../assets/css/ebazar.style.min.css">
+</head>
+<body class="rtl_mode" style>
+    <div id="ebazar-layout" class="theme-blue">
+    
+        <!-- sidebar -->
+        <div class="sidebar px-4 py-4 py-md-5 me-0">
+            <div class="d-flex flex-column h-100">
+                <a href="index.html" class="mb-0 brand-icon">
+                    <span class="logo-icon">
+                        <i class="bi bi-bag-check-fill fs-4"></i>
+                    </span>
+                    <span class="logo-text">ای بازار</span>
+                </a>
+                <!-- Menu: main ul -->
+                <ul class="menu-list flex-grow-1 mt-3">
+                    <li><a class="m-link" href="../index.html"><i class="icofont-ui-home"></i><span>خانه</span></a>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Authentication" href="#"><i
+                                class="icofont-ui-lock"></i> <span>احراز هویت</span> <span class="arrow icofont-dotted-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="menu-Authentication">
+                            <li><a class="ms-link" href="auth-signin.html"><span>ورود</span></a></li>
+                            <li><a class="ms-link" href="auth-signup.html"><span>ثبت نام</span></a></li>
+                            <li><a class="ms-link" href="auth-password-reset.html"><span>بازنشانی رمز عبور</span></a></li>
+                            <li><a class="ms-link" href="auth-two-step.html"><span>احراز هویت 2 مرحله ای</span></a></li>
+                            <li><a class="ms-link" href="auth-404.html"><span>404</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="index.html"><i class="icofont-code"></i> <span>صفحه شروع کننده</span></a></li>
+                    <li class="collapsed">
+                        <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Components" href="#"><i
+                                class="icofont-paint"></i> <span>اجزای رابط کاربری</span> <span class="arrow icofont-dotted-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse show" id="menu-Components">
+                            <li><a class="ms-link" href="ui-alerts.html"><span>هشدارها</span> </a></li>
+                            <li><a class="ms-link" href="ui-badge.html"><span>نشان</span></a></li>
+                            <li><a class="ms-link" href="ui-breadcrumb.html"><span>برد کرامب</span></a></li>
+                            <li><a class="ms-link" href="ui-buttons.html"><span>دکمه ها</span></a></li>
+                            <li><a class="ms-link" href="ui-card.html"><span>کارت</span></a></li>
+                            <li><a class="ms-link active" href="ui-carousel.html"><span>کاروسل</span></a></li>
+                            <li><a class="ms-link" href="ui-collapse.html"><span>جمع شونده</span></a></li>
+                            <li><a class="ms-link" href="ui-dropdowns.html"><span>بازشوها</span></a></li>
+                            <li><a class="ms-link" href="ui-listgroup.html"><span>گروه لیست</span></a></li>
+                            <li><a class="ms-link" href="ui-modal.html"><span>مودال</span></a></li>
+                            <li><a class="ms-link" href="ui-navs.html"><span>ناوها</span></a></li>
+                            <li><a class="ms-link" href="ui-navbar.html"><span>نوار</span></a></li>
+                            <li><a class="ms-link" href="ui-pagination.html"><span>صفحه بندی</span></a></li>
+                            <li><a class="ms-link" href="ui-popovers.html"><span>پنجره های بازشو</span></a></li>
+                            <li><a class="ms-link" href="ui-progress.html"><span>پیشرفت</span></a></li>
+                            <li><a class="ms-link" href="ui-scrollspy.html"><span>اسکرول اسپی</span></a></li>
+                            <li><a class="ms-link" href="ui-spinners.html"><span>چرخنده ها</span></a></li>
+                            <li><a class="ms-link" href="ui-toasts.html"><span>نان تست</span></a></li>
+                            <li><a class="ms-link" href="ui-tooltips.html"><span>راهنمای ابزار</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="documentation.html"><i class="icofont-law-document"></i>
+                            <span>مستندات</span></a></li>
+                    <li><a class="m-link" href="changelog.html"><i class="icofont-edit"></i> <span>تغییرات</span> <span
+                            class="ms-auto small-14 fw-bold">v1.0.0</span></a></li>
+                </ul>
+        
+            
+                <!-- Menu: menu collepce btn -->
+                <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                    <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+                </button>
+            </div>
+        </div>
+    
+        <!-- main body area -->
+        <div class="main px-lg-4 px-md-4">
+        
+            <!-- Body: Header -->
+            <div class="header">
+                <nav class="navbar py-4">
+                    <div class="container">
+        
+                        <!-- header rightbar icon -->
+                        <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+                            <div class="d-flex">
+                                <a class="nav-link text-primary collapsed" href="help.html" title="Get Help">
+                                    <i class="icofont-info-square fs-5"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown zindex-popover">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <img src="../assets/images/flag/GB.png" alt="">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3">
+                                    <div class="card border-0">
+                                        <ul class="list-unstyled py-2 px-3">
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/GB.png" alt=""> انگلیسی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/DE.png" alt=""> آلمانی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/FR.png" alt=""> فرانسوی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/IT.png" alt=""> ایتالیایی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/RU.png" alt=""> روسی</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown notifications">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="icofont-alarm fs-5"></i>
+                                    <span class="pulse-ring"></span>
+                                </a>
+                                <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3">
+                                    <div class="card border-0 w380">
+                                        <div class="card-header border-0 p-3">
+                                            <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                                <span>اعلان ها</span>
+                                                <span class="badge text-white">06</span>
+                                            </h5>
+                                        </div>
+                                        <div class="tab-content card-body">
+                                            <div class="tab-pane fade show active">
+                                                <ul class="list-unstyled list mb-0">
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar1.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>2مین</small></p>
+                                                                <span class="">محصول جدید اضافه شد 2021-07-15 <span class="badge bg-success">اضاف</span></span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <div class="avatar rounded-circle no-thumbnail">AH</div>
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">تولید کننده فاکتور </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar3.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">برگشت سفارش RT-00004</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar5.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">سفارش محصول به اسباب بازی فروشی</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar6.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">رد تایید</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar7.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small class="">1روز</small></p>
+                                                                <span class="">ورود محصول استوک به روز شد</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="card-footer text-center border-top-0" href="#"> مشاهده تمام اعلان ها</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
+                                <div class="u-info me-2">
+                                    <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">آرش خادملو</span></p>
+                                    <small>مشخصات مدیر</small>
+                                </div>
+                                <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static">
+                                    <img class="avatar lg rounded-circle img-thumbnail" src="../assets/images/profile_av.svg" alt="profile">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                                    <div class="card border-0 w280">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex py-1">
+                                                <img class="avatar rounded-circle" src="../assets/images/profile_av.svg" alt="profile">
+                                                <div class="flex-fill ms-3">
+                                                    <p class="mb-0"><span class="font-weight-bold">آرش خادملو</span></p>
+                                                    <small class="">Johnquinn@gmail.com</small>
+                                                </div>
+                                            </div>
+                                            
+                                            <div><hr class="dropdown-divider border-dark"></div>
+                                        </div>
+                                        <div class="list-group m-2 ">
+                                            <a href="../admin-profile.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-ui-user fs-5 me-3"></i>صفحه پروفایل</a>
+                                            <a href="../order-invoices.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-file-text fs-5 me-3"></i>سفارش فاکتورها</a>
+                                            <a href="auth-signin.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-logout fs-5 me-3"></i>خروج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting ms-2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
+                            </div>
+                        </div>
+        
+                        <!-- menu toggler -->
+                        <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                            <span class="fa fa-bars"></span>
+                        </button>
+        
+                        <!-- main menu Search-->
+                        <div class="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
+                            <div class="input-group flex-nowrap input-group-lg">
+                                <input type="search" class="form-control" placeholder="جستجو" aria-label="search" aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
+                                
+                            </div>
+                        </div>
+        
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Body: Body -->
+            <div class="body d-flex py-lg-3 py-md-2">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-8 col-sm-12">
+                                <h2 id="how-it-works">چگونه کار می کند</h2>
+                                <p>چرخ فلک یک نمایش اسلاید برای دوچرخه سواری در یک سری محتوا است که با تبدیل های سه بعدی CSS و کمی جاوا اسکریپت ساخته شده است. با مجموعه ای از تصاویر، متن یا نشانه گذاری سفارشی کار می کند. همچنین شامل پشتیبانی از کنترل ها و نشانگرهای قبلی/ بعدی است.</p>
+                                <p>در مرورگرهایی که <a href="https://www.w3.org/TR/page-visibility/">صفحه نمایش API</a> هنگامی که صفحه وب برای کاربر قابل مشاهده نیست (مانند زمانی که برگه مرورگر غیرفعال است، پنجره مرورگر کوچک شده است و غیره) چرخ فلک از لغزش جلوگیری می کند..</p>
+                                <div class="card card-callout mb-3">
+                                    <div class="card-body">
+                                        اثر انیمیشن این مؤلفه به <code>prefers-reduced-motion</code> پرس و جو رسانه ای را ببینید <a href="https://v5.getbootstrap.com/docs/5.0/getting-started/accessibility/#reduced-motion">بخش حرکت کاهش یافته اسناد دسترسی ما</a>.
+                                    </div>
+                                </div>
+                                
+                                <p>لطفاً توجه داشته باشید که چرخ فلک های تو در تو پشتیبانی نمی شوند و چرخ فلک ها معمولاً با استانداردهای دسترسی مطابقت ندارند.</p>
+                                <h2 id="example">نمونه</h2>
+                                <p>چرخ فلک ها به طور خودکار ابعاد اسلاید را عادی نمی کنند. به این ترتیب، ممکن است لازم باشد از ابزارهای کمکی اضافی یا سبک های سفارشی برای اندازه مناسب محتوا استفاده کنید. در حالی که چرخ فلک ها از کنترل ها و نشانگرهای قبلی/ بعدی پشتیبانی می کنند، به صراحت نیازی به آنها نیست. به دلخواه خود اضافه و سفارشی کنید.</p>
+                                <p><strong><code>.active</code> کلاس باید به یکی از اسلایدها اضافه شود</strong> در غیر این صورت چرخ فلک قابل مشاهده نخواهد بود. همچنین مطمئن شوید که یک شناسه منحصر به فرد روی آن تنظیم کنید <code>.carousel</code> برای کنترل های اختیاری، به خصوص اگر از چرخ فلک های متعدد در یک صفحه استفاده می کنید. عناصر کنترل و نشانگر باید دارای الف باشند<code>data-bs-target</code> ویژگی (یا <code>href</code> برای پیوندها) که با شناسه آن مطابقت دارد <code>.carousel</code> عنصر.</p>
+                                
+                                <h3 id="slides-only">فقط اسلایدها</h3>
+                                <p>اینجا یک چرخ فلک فقط با اسلاید است. به حضور <code>.d-block</code> و <code>.w-100</code> بر روی تصاویر چرخ فلک برای جلوگیری از تراز کردن تصویر پیش فرض مرورگر.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img-fluid" src="../assets/images/gallery/10.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/8.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/1.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div id=&quot;carouselExampleSlidesOnly&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+            &lt;div class=&quot;carousel-item active&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/10.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/8.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="with-controls">با کنترل</h3>
+                                <p>اضافه کردن کنترل های قبلی و بعدی:</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img-fluid" src="../assets/images/gallery/10.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/8.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/1.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">قبلی</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">بعدی</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div id=&quot;carouselExampleControls&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+            &lt;div class=&quot;carousel-item active&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/10.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/8.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleControls&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+            &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselExampleControls&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+            &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="with-indicators">با اندیکاتورها</h3>
+                                <p>همچنین می توانید نشانگرها را در کنار کنترل ها به چرخ فلک اضافه کنید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=""></li>
+                                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=""></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img-fluid" src="../assets/images/gallery/10.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/8.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/1.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">قبلی</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">بعدی</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div id=&quot;carouselExampleIndicators&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+        &lt;ol class=&quot;carousel-indicators&quot;&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleIndicators&quot; data-bs-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleIndicators&quot; data-bs-slide-to=&quot;1&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleIndicators&quot; data-bs-slide-to=&quot;2&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+            &lt;div class=&quot;carousel-item active&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/10.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/8.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleIndicators&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+            &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselExampleIndicators&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+            &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="with-captions">با زیرنویس</h3>
+                                <p>با استفاده از آن به اسلایدهای خود زیرنویس اضافه کنید <code>.carousel-caption</code> عنصر در هر کدام <code>.carousel-item</code>. همانطور که در زیر نشان داده شده است، می‌توان آن‌ها را به‌راحتی بر روی درگاه‌های نمایش کوچک‌تر پنهان کرد <a href="https://v5.getbootstrap.com/docs/5.0/utilities/display/">display utilities</a>. ما آنها را در ابتدا با پنهان می کنیم <code>.d-none</code> و آنها را بر روی دستگاه های متوسط با <code>.d-md-block</code>.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class=""></li>
+                                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class=""></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img-fluid" src="../assets/images/gallery/1.jpg" alt="" />
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>اولین برچسب اسلاید</h5>
+                                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم .</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/2.jpg" alt="" />
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>اولین برچسب اسلاید</h5>
+                                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم .</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/3.jpg" alt="" />
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>اولین برچسب اسلاید</h5>
+                                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم .</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">قبلی</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">بعدی</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div id=&quot;carouselExampleCaptions&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+        &lt;ol class=&quot;carousel-indicators&quot;&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleCaptions&quot; data-bs-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleCaptions&quot; data-bs-slide-to=&quot;1&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleCaptions&quot; data-bs-slide-to=&quot;2&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+            &lt;div class=&quot;carousel-item active&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
+                    &lt;h5&gt;First slide label&lt;/h5&gt;
+                    &lt;p&gt;Nulla vitae elit libero, a pharetra augue mollis interdum.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
+                    &lt;h5&gt;Second slide label&lt;/h5&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/3.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
+                    &lt;h5&gt;Third slide label&lt;/h5&gt;
+                    &lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleCaptions&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+            &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselExampleCaptions&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+            &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="crossfade">متقاطع</h3>
+                                <p>افزودن <code>.carousel-fade</code> به چرخ و فلک خود برای متحرک سازی اسلایدها با انتقال محو به جای اسلاید.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img-fluid" src="../assets/images/gallery/10.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/8.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img-fluid" src="../assets/images/gallery/1.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">قبلی</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">بعدی</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div id=&quot;carouselExampleFade&quot; class=&quot;carousel slide carousel-fade&quot; data-bs-ride=&quot;carousel&quot;&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+            &lt;div class=&quot;carousel-item active&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/10.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/8.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/1.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleFade&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+            &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselExampleFade&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+            &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h3 id="individual-carousel-item-interval">شخصی <code>.carousel-item</code> فاصله</h3>
+                                <p>افزودن <code>data-interval=""</code> به یک <code>.carousel-item</code> برای تغییر مدت زمان تأخیر بین دوچرخه‌سواری خودکار تا مورد بعدی.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item" data-interval="10000">
+                                                        <img class="img-fluid" src="../assets/images/gallery/2.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item active carousel-item-left" data-interval="2000">
+                                                        <img class="img-fluid" src="../assets/images/gallery/5.jpg" alt="" />
+                                                    </div>
+                                                    <div class="carousel-item carousel-item-next carousel-item-left">
+                                                        <img class="img-fluid" src="../assets/images/gallery/7.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">قبلی</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">بعدی</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div id=&quot;carouselExampleInterval&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+            &lt;div class=&quot;carousel-item&quot; data-interval=&quot;10000&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/2.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item active carousel-item-left&quot; data-interval=&quot;2000&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/5.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item carousel-item-next carousel-item-left&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/7.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleInterval&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+            &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselExampleInterval&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+            &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h2 id="dark-variant">نوع تیره</h2>
+                                <p>افزودن <code>.carousel-dark</code> به <code>.carousel</code> برای کنترل‌ها، نشانگرها و زیرنویس‌های تیره‌تر. کنترل‌ها از پر کردن سفید پیش‌فرضشان با علامت معکوس شده‌اند <code>filter</code> ویژگی CSS. زیرنویس‌ها و کنترل‌ها دارای متغیرهای Sass اضافی هستند که آن را سفارشی می‌کنند <code>color</code> و <code>background-color</code>.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=""></li>
+                                                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class=""></li>
+                                                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="active"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item" data-interval="10000">
+                                                        <img class="img-fluid" src="../assets/images/gallery/3.jpg" alt="" />
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>اولین برچسب اسلاید</h5>
+                                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item active carousel-item-left" data-interval="2000">
+                                                        <img class="img-fluid" src="../assets/images/gallery/8.jpg" alt="" />
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>اولین برچسب اسلاید</h5>
+                                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item carousel-item-next carousel-item-left">
+                                                        <img class="img-fluid" src="../assets/images/gallery/6.jpg" alt="" />
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>اولین برچسب اسلاید</h5>
+                                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">قبلی</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">بعدی</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;div id=&quot;carouselExampleDark&quot; class=&quot;carousel carousel-dark slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+        &lt;ol class=&quot;carousel-indicators&quot;&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleDark&quot; data-bs-slide-to=&quot;0&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleDark&quot; data-bs-slide-to=&quot;1&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li data-bs-target=&quot;#carouselExampleDark&quot; data-bs-slide-to=&quot;2&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+            &lt;div class=&quot;carousel-item&quot; data-interval=&quot;10000&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/3.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
+                    &lt;h5&gt;First slide label&lt;/h5&gt;
+                    &lt;p&gt;Nulla vitae elit libero, a pharetra augue mollis interdum.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item active carousel-item-left&quot; data-interval=&quot;2000&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/8.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
+                    &lt;h5&gt;Second slide label&lt;/h5&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;carousel-item carousel-item-next carousel-item-left&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;../assets/images/gallery/6.jpg&quot; alt=&quot;&quot; /&gt;
+                &lt;div class=&quot;carousel-caption d-none d-md-block&quot;&gt;
+                    &lt;h5&gt;Third slide label&lt;/h5&gt;
+                    &lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleDark&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+            &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselExampleDark&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+            &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visually-hidden&quot;&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h2 id="usage">استفاده</h2>
+                                <h3 id="via-data-attributes">از طریق ویژگی های داده</h3>
+                                <p>از ویژگی های داده برای کنترل آسان موقعیت چرخ فلک استفاده کنید. <code>data-slide</code> کلمات کلیدی را می پذیرد <code>prev</code> یا <code>next</code>، که موقعیت اسلاید را نسبت به موقعیت فعلی آن تغییر می دهد. روش دیگر، استفاده کنید <code>data-bs-slide-to</code> برای ارسال یک شاخص اسلاید خام به چرخ فلک <code>data-bs-slide-to="2"</code>، که موقعیت اسلاید را به یک شاخص خاص که با شروع با شروع می شود تغییر می دهد <code>0</code>.</p>
+                                <p><code>data-bs-ride="carousel"</code> ویژگی برای علامت گذاری یک چرخ فلک به عنوان متحرک با شروع بارگذاری صفحه استفاده می شود. اگر استفاده نمی کنید <code>data-bs-ride="carousel"</code> برای مقداردهی اولیه چرخ فلک، باید خودتان آن را مقداردهی اولیه کنید. <strong>نمی توان آن را در ترکیب با (زائد و غیر ضروری) مقداردهی اولیه صریح جاوا اسکریپت از همان چرخ فلک استفاده کرد..</strong></p>
+                                
+                                <h3 id="via-javascript">از طریق جاوا اسکریپت</h3>
+                                <p>تماس دستی چرخ فلک با:</p>
+                                <div class="bd-example mb-5">
+    <pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCarousel</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">carousel</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Carousel</span><span class="p">(</span><span class="nx">myCarousel</span><span class="p">)</span>
+    </code></pre>
+                                </div>
+                                
+                                <h3 id="options">گزینه ها</h3>
+                                <p>گزینه ها را می توان از طریق ویژگی های داده یا جاوا اسکریپت منتقل کرد. برای ویژگی های داده، نام گزینه را به آن اضافه کنید <code>data-</code>، همانطور که در <code>data-interval=""</code>.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 100px;">نام</th>
+                                            <th style="width: 50px;">نوع</th>
+                                            <th style="width: 50px;">پیش فرض</th>
+                                            <th>توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>interval</code></td>
+                                            <td>عدد</td>
+                                            <td><code>5000</code></td>
+                                            <td>مدت زمان تأخیر بین دوچرخه‌سواری خودکار یک مورد. اگر نادرست باشد، چرخ فلک به طور خودکار چرخه نخواهد شد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>keyboard</code></td>
+                                            <td>بولن</td>
+                                            <td><code>true</code></td>
+                                            <td>آیا چرخ فلک باید به رویدادهای صفحه کلید واکنش نشان دهد یا خیر.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>pause</code></td>
+                                            <td>string | boolean</td>
+                                            <td><code>"hover"</code></td>
+<td>مدت زمان تأخیر بین دوچرخه‌سواری خودکار یک مورد. اگر نادرست باشد، چرخ فلک به طور خودکار چرخه نخواهد شد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>slide</code></td>
+                                            <td>string | boolean</td>
+                                            <td><code>false</code></td>
+                                            <td>مدت زمان تأخیر بین دوچرخه‌سواری خودکار یک مورد. اگر نادرست باشد، چرخ فلک به طور خودکار چرخه نخواهد شد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>wrap</code></td>
+                                            <td>boolean</td>
+                                            <td><code>true</code></td>
+                                           <td>مدت زمان تأخیر بین دوچرخه‌سواری خودکار یک مورد. اگر نادرست باشد، چرخ فلک به طور خودکار چرخه نخواهد شد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>touch</code></td>
+                                            <td>boolean</td>
+                                            <td><code>true</code></td>
+                                            <td>مدت زمان تأخیر بین دوچرخه‌سواری خودکار یک مورد. اگر نادرست باشد، چرخ فلک به طور خودکار چرخه نخواهد شد.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h3 id="methods">روش ها</h3>
+                                <div class="card card-callout">
+                                    <div class="card-body">
+                                        <h4 id="asynchronous-methods-and-transitions">روش ها و انتقال های ناهمزمان</h4>
+                                        <p>همه متدهای API هستند <strong>نامتقارن</strong> و شروع کنید <strong>انتقال</strong>. آنها به محض شروع انتقال به تماس گیرنده باز می گردند اما <strong>قبل از اینکه تمام شود</strong>. علاوه بر این، یک روش فراخوانی بر روی a <strong>جزء انتقال نادیده گرفته خواهد شد</strong>.</p>
+                                        <p><a href="https://v5.getbootstrap.com/docs/5.0/getting-started/javascript/#asynchronous-functions-and-transitions">برای اطلاعات بیشتر به مستندات جاوا اسکریپت ما مراجعه کنید</a>.</p>
+                                    </div>
+                                </div>
+                                
+                                <p>می‌توانید با سازنده چرخ فلک یک نمونه چرخ فلک ایجاد کنید، برای مثال، با گزینه‌های اضافی مقداردهی اولیه کنید و شروع به چرخیدن در میان آیتم‌ها کنید:</p>
+                                <div class="bd-example mb-5">
+    <pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCarousel</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">carousel</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Carousel</span><span class="p">(</span><span class="nx">myCarousel</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">interval</span><span class="o">:</span> <span class="mi">2000</span><span class="p">,</span>
+        <span class="nx">wrap</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">})</span>
+    </code></pre>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>متد</th>
+                                            <th>توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>cycle</code></td>
+                                            <td>در میان آیتم های چرخ و فلک از چپ به راست می چرخد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>pause</code></td>
+                                            <td>در میان آیتم های چرخ و فلک از چپ به راست می چرخد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>prev</code></td>
+                                            <td>در میان آیتم های چرخ و فلک از چپ به راست می چرخد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>next</code></td>
+                                            <td>در میان آیتم های چرخ و فلک از چپ به راست می چرخد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>nextWhenVisible</code></td>
+                                           <td>در میان آیتم های چرخ و فلک از چپ به راست می چرخد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>dispose</code></td>
+                                            <td>در میان آیتم های چرخ و فلک از چپ به راست می چرخد.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>getInstance</code></td>
+                                            <td>در میان آیتم های چرخ و فلک از چپ به راست می چرخد.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h3 id="events">رویدادها</h3>
+                                <p>کلاس چرخ و فلک بوت استرپ دو رویداد را برای اتصال به عملکرد چرخ فلک نشان می دهد. هر دو رویداد دارای ویژگی های اضافی زیر هستند:</p>
+                                <ul>
+                                    <li><code>direction</code>: جهتی که چرخ فلک در آن می لغزد (یا <code>"left"</code> یا <code>"right"</code>).</li>
+                                    <li><code>relatedTarget</code>: عنصر DOM که به عنوان آیتم فعال در جای خود قرار می گیرد.</li>
+                                    <li><code>from</code>: شاخص مورد فعلی</li>
+                                    <li><code>to</code>: شاخص مورد فعلی</li>
+                                </ul>
+                                <p>تمام رویدادهای چرخ و فلک به سمت خود چرخ و فلک شلیک می شوند (یعنی در <code>&lt;div class="carousel"&gt;</code>).</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 150px;">نوع رویداد</th>
+                                            <th>توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>slide.bs.carousel</code></td>
+                                            <td>هنگامی که چرخ فلک انتقال اسلاید خود را کامل کرد، شلیک می شود.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>slid.bs.carousel</code></td>
+                                            <td>هنگامی که چرخ فلک انتقال اسلاید خود را کامل کرد، شلیک می شود.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="bd-example mb-5">
+    <pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCarousel</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'myCarousel'</span><span class="p">)</span>
+
+    <span class="nx">myCarousel</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'slide.bs.carousel'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// do something...
+    </span><span class="c1"></span><span class="p">})</span>
+    </code></pre>
+                                </div>
+                                <h3 id="change-transition-duration">تغییر مدت زمان انتقال</h3>
+                                <p>مدت زمان انتقال از <code>.carousel-item</code> قابل تغییر با <code>$carousel-transition</code> اگر از CSS کامپایل شده استفاده می کنید، متغیر Sass را قبل از کامپایل یا سبک های سفارشی کنید. اگر چندین انتقال اعمال می شود، مطمئن شوید که ابتدا انتقال تبدیل تعریف شده است (مثلا. <code>transition: transform 2s ease, opacity .5s ease-out</code>).</p>
+                                
+                            </div>
+                            <div class="col-lg-3 col-sm-12 d-none d-sm-block">
+                                <div class="sticky-lg-top">
+                                    <strong class="d-block h6 my-2 pb-2 border-bottom">در این صفحه</strong>
+                                    <nav class="color-bg-200 py-3">
+                                        <ul class="side-navbar">
+                                            <li><a href="#how-it-works">چگونه کار می کند</a></li>
+                                            <li><a href="#example">نمونه</a>
+                                                <ul>
+                                                    <li><a href="#slides-only">فقط اسلایدها</a></li>
+                                                    <li><a href="#with-controls">با کنترل</a></li>
+                                                    <li><a href="#with-indicators">با اندیکاتورها</a></li>
+                                                    <li><a href="#with-captions">با زیرنویس</a></li>
+                                                    <li><a href="#crossfade">متقاطع</a></li>
+                                                    <li><a href="#individual-carousel-item-interval">شخصی <code>.carousel-item</code> فاصله</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#dark-variant">نوع تیره</a></li>
+                                            <li><a href="#usage">استفاده</a>
+                                                <ul>
+                                                    <li><a href="#via-data-attributes">از طریق ویژگی های داده</a></li>
+                                                    <li><a href="#via-javascript">از طریق جاوا اسکریپت</a></li>
+                                                    <li><a href="#options">گزینه ها</a></li>
+                                                    <li><a href="#methods">روش ها</a></li>
+                                                    <li><a href="#events">رویدادها</a></li>
+                                                    <li><a href="#change-transition-duration">تغییر مدت زمان انتقال</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> <!-- Row end  -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Custom Settings-->
+            <div class="modal fade right" id="Settingmodal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog  modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">تنظیمات سفارشی</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+                        </div>
+                        <div class="modal-body custom_setting">
+                            <!-- Settings: Color -->
+                            <div class="setting-theme pb-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-color-bucket fs-4 me-2 text-primary"></i>تنظیمات رنگ قالب</h6>
+                                <ul class="list-unstyled row row-cols-3 g-2 choose-skin mb-2 mt-2">
+                                    <li data-theme="indigo"><div class="indigo"></div></li>
+                                    <li data-theme="tradewind"><div class="tradewind"></div></li>
+                                    <li data-theme="monalisa"><div class="monalisa"></div></li>
+                                    <li data-theme="blue" class="active"><div class="blue"></div></li>
+                                    <li data-theme="cyan"><div class="cyan"></div></li>
+                                    <li data-theme="green"><div class="green"></div></li>
+                                    <li data-theme="orange"><div class="orange"></div></li>
+                                    <li data-theme="blush"><div class="blush"></div></li>
+                                    <li data-theme="red"><div class="red"></div></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-gradient py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-paint fs-4 me-2 text-primary"></i>گرادیان نوار کناری</h6>
+                                <div class="form-check form-switch gradient-switch pt-2 mb-2">
+                                    <input class="form-check-input" type="checkbox" id="CheckGradient">
+                                    <label class="form-check-label" for="CheckGradient">فعال کردن گرادیان! ( نوار کناری )</label>
+                                </div>
+                            </div>
+                            <!-- Settings: Template dynamics -->
+                            <div class="dynamic-block py-3">
+                                <ul class="list-unstyled choose-skin mb-2 mt-1">
+                                    <li data-theme="dynamic"><div class="dynamic"><i class="icofont-paint me-2"></i> برای تنظیمات پویا کلیک کنید</div></li>
+                                </ul>
+                                <div class="dt-setting">
+                                    <ul class="list-group list-unstyled mt-1">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ اصلی</label>
+                                            <button id="primaryColorPicker" class="btn bg-primary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ ثانویه</label>
+                                            <button id="secondaryColorPicker" class="btn bg-secondary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 1</label>
+                                            <button id="chartColorPicker1" class="btn chart-color1 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 2</label>
+                                            <button id="chartColorPicker2" class="btn chart-color2 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 3</label>
+                                            <button id="chartColorPicker3" class="btn chart-color3 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 4</label>
+                                            <button id="chartColorPicker4" class="btn chart-color4 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 5</label>
+                                            <button id="chartColorPicker5" class="btn chart-color5 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Settings: Font -->
+                            <div class="setting-font py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-font fs-4 me-2 text-primary"></i> تنظیمات فونت</h6>
+                                <ul class="list-group font_setting mt-1">
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-poppins" value="font-poppins">
+                                            <label class="form-check-label" for="font-poppins">
+                                                فونت گوگل پاپینس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-opensans" value="font-opensans" checked="">
+                                            <label class="form-check-label" for="font-opensans">
+                                                فونت گوگل اوپن سانس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-montserrat" value="font-montserrat">
+                                            <label class="form-check-label" for="font-montserrat">
+                                                فونت گوگل مونت
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-mukta" value="font-mukta">
+                                            <label class="form-check-label" for="font-mukta">
+                                                فونت گوگل موتکا
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Settings: Light/dark -->
+                            <div class="setting-mode py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-layout fs-4 me-2 text-primary"></i>چیدمان کنتراست</h6>
+                                <ul class="list-group list-unstyled mb-0 mt-1">
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-switch mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-switch">
+                                            <label class="form-check-label" for="theme-switch">فعال کردن حالت تاریک!</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-high-contrast mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                            <label class="form-check-label" for="theme-high-contrast">فعال کردن کنتراست بالا</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-rtl mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-rtl">
+                                            <label class="form-check-label" for="theme-rtl">فعال کردن حالت چپ چین!</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-start">
+                            <button type="button" class="btn btn-white border lift" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary lift">ذخیره تنظبمات</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../assets/bundles/libscripts.bundle.js"></script>
+
+    <!-- Prism js file please do not add in your project -->
+    <script src="../assets/plugin/prism/prism.js"></script>
+
+    <!-- Jquery Page Js -->
+    <script src="../../js/template.js"></script>
+</body>
+
+</html>

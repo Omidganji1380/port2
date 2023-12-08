@@ -1,0 +1,763 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>::eBazar:: Ui Collapse </title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Favicon-->
+
+    <!-- Plugin css  -->
+    <link rel="stylesheet" href="../assets/plugin/prism/prism.css">
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../assets/css/ebazar.style.min.css">
+</head>
+<body class="rtl_mode" style>
+    <div id="ebazar-layout" class="theme-blue">
+
+        <!-- sidebar -->
+        <div class="sidebar px-4 py-4 py-md-5 me-0">
+            <div class="d-flex flex-column h-100">
+                <a href="index.html" class="mb-0 brand-icon">
+                    <span class="logo-icon">
+                        <i class="bi bi-bag-check-fill fs-4"></i>
+                    </span>
+                    <span class="logo-text">ای بازار</span>
+                </a>
+                <!-- Menu: main ul -->
+                <ul class="menu-list flex-grow-1 mt-3">
+                    <li><a class="m-link" href="../index.html"><i class="icofont-ui-home"></i><span>خانه</span></a>
+                    </li>
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Authentication" href="#"><i
+                                class="icofont-ui-lock"></i> <span>احراز هویت</span> <span class="arrow icofont-dotted-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="menu-Authentication">
+                            <li><a class="ms-link" href="auth-signin.html"><span>ورود</span></a></li>
+                            <li><a class="ms-link" href="auth-signup.html"><span>ثبت نام</span></a></li>
+                            <li><a class="ms-link" href="auth-password-reset.html"><span>بازنشانی رمز عبور</span></a></li>
+                            <li><a class="ms-link" href="auth-two-step.html"><span>احراز هویت 2 مرحله ای</span></a></li>
+                            <li><a class="ms-link" href="auth-404.html"><span>404</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="index.html"><i class="icofont-code"></i> <span>صفحه شروع کننده</span></a></li>
+                    <li class="collapsed">
+                        <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Components" href="#"><i
+                                class="icofont-paint"></i> <span>اجزای رابط کاربری</span> <span class="arrow icofont-dotted-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse show" id="menu-Components">
+                            <li><a class="ms-link" href="ui-alerts.html"><span>هشدارها</span> </a></li>
+                            <li><a class="ms-link" href="ui-badge.html"><span>نشان</span></a></li>
+                            <li><a class="ms-link" href="ui-breadcrumb.html"><span>برد کرامب</span></a></li>
+                            <li><a class="ms-link" href="ui-buttons.html"><span>دکمه ها</span></a></li>
+                            <li><a class="ms-link" href="ui-card.html"><span>کارت</span></a></li>
+                            <li><a class="ms-link" href="ui-carousel.html"><span>کاروسل</span></a></li>
+                            <li><a class="ms-link active" href="ui-collapse.html"><span>جمع شونده</span></a></li>
+                            <li><a class="ms-link" href="ui-dropdowns.html"><span>بازشوها</span></a></li>
+                            <li><a class="ms-link" href="ui-listgroup.html"><span>گروه لیست</span></a></li>
+                            <li><a class="ms-link" href="ui-modal.html"><span>مودال</span></a></li>
+                            <li><a class="ms-link" href="ui-navs.html"><span>ناوها</span></a></li>
+                            <li><a class="ms-link" href="ui-navbar.html"><span>نوار</span></a></li>
+                            <li><a class="ms-link" href="ui-pagination.html"><span>صفحه بندی</span></a></li>
+                            <li><a class="ms-link" href="ui-popovers.html"><span>پنجره های بازشو</span></a></li>
+                            <li><a class="ms-link" href="ui-progress.html"><span>پیشرفت</span></a></li>
+                            <li><a class="ms-link" href="ui-scrollspy.html"><span>اسکرول اسپی</span></a></li>
+                            <li><a class="ms-link" href="ui-spinners.html"><span>چرخنده ها</span></a></li>
+                            <li><a class="ms-link" href="ui-toasts.html"><span>نان تست</span></a></li>
+                            <li><a class="ms-link" href="ui-tooltips.html"><span>راهنمای ابزار</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="documentation.html"><i class="icofont-law-document"></i>
+                            <span>مستندات</span></a></li>
+                    <li><a class="m-link" href="changelog.html"><i class="icofont-edit"></i> <span>تغییرات</span> <span
+                            class="ms-auto small-14 fw-bold">v1.0.0</span></a></li>
+                </ul>
+        
+            
+                <!-- Menu: menu collepce btn -->
+                <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                    <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- main body area -->
+        <div class="main px-lg-4 px-md-4">
+
+            <!-- Body: Header -->
+            <div class="header">
+                <nav class="navbar py-4">
+                    <div class="container">
+        
+                        <!-- header rightbar icon -->
+                        <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+                            <div class="d-flex">
+                                <a class="nav-link text-primary collapsed" href="help.html" title="Get Help">
+                                    <i class="icofont-info-square fs-5"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown zindex-popover">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <img src="../assets/images/flag/GB.png" alt="">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3">
+                                    <div class="card border-0">
+                                        <ul class="list-unstyled py-2 px-3">
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/GB.png" alt=""> انگلیسی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/DE.png" alt=""> آلمانی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/FR.png" alt=""> فرانسوی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/IT.png" alt=""> ایتالیایی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=""><img src="../assets/images/flag/RU.png" alt=""> روسی</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown notifications">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="icofont-alarm fs-5"></i>
+                                    <span class="pulse-ring"></span>
+                                </a>
+                                <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3">
+                                    <div class="card border-0 w380">
+                                        <div class="card-header border-0 p-3">
+                                            <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                                <span>اعلان ها</span>
+                                                <span class="badge text-white">06</span>
+                                            </h5>
+                                        </div>
+                                        <div class="tab-content card-body">
+                                            <div class="tab-pane fade show active">
+                                                <ul class="list-unstyled list mb-0">
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar1.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>2مین</small></p>
+                                                                <span class="">محصول جدید اضافه شد 2021-07-15 <span class="badge bg-success">اضاف</span></span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <div class="avatar rounded-circle no-thumbnail">AH</div>
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">تولید کننده فاکتور </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar3.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">برگشت سفارش RT-00004</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar5.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>13مین</small></p>
+                                                                <span class="">سفارش محصول به اسباب بازی فروشی</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar6.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small>1ساعت</small></p>
+                                                                <span class="">رد تایید</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../assets/images/xs/avatar7.svg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">آرش خادملو</span> <small class="">1روز</small></p>
+                                                                <span class="">ورود محصول استوک به روز شد</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="card-footer text-center border-top-0" href="#"> مشاهده تمام اعلان ها</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
+                                <div class="u-info me-2">
+                                    <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">آرش خادملو</span></p>
+                                    <small>مشخصات مدیر</small>
+                                </div>
+                                <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static">
+                                    <img class="avatar lg rounded-circle img-thumbnail" src="../assets/images/profile_av.svg" alt="profile">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                                    <div class="card border-0 w280">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex py-1">
+                                                <img class="avatar rounded-circle" src="../assets/images/profile_av.svg" alt="profile">
+                                                <div class="flex-fill ms-3">
+                                                    <p class="mb-0"><span class="font-weight-bold">آرش خادملو</span></p>
+                                                    <small class="">Johnquinn@gmail.com</small>
+                                                </div>
+                                            </div>
+                                            
+                                            <div><hr class="dropdown-divider border-dark"></div>
+                                        </div>
+                                        <div class="list-group m-2 ">
+                                            <a href="../admin-profile.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-ui-user fs-5 me-3"></i>صفحه پروفایل</a>
+                                            <a href="../order-invoices.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-file-text fs-5 me-3"></i>سفارش فاکتورها</a>
+                                            <a href="auth-signin.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-logout fs-5 me-3"></i>خروج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting ms-2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
+                            </div>
+                        </div>
+        
+                        <!-- menu toggler -->
+                        <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                            <span class="fa fa-bars"></span>
+                        </button>
+        
+                        <!-- main menu Search-->
+                        <div class="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
+                            <div class="input-group flex-nowrap input-group-lg">
+                                <input type="search" class="form-control" placeholder="جستجو" aria-label="search" aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
+                                
+                            </div>
+                        </div>
+        
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Body: Body -->
+            <div class="body d-flex py-lg-3 py-md-2">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-8 col-sm-12">
+
+                                <h2 id="how-it-works">چگونه کار می کند</h2>
+                                <p>پلاگین جاوا اسکریپت جمع شده برای نمایش و پنهان کردن محتوا استفاده می شود. دکمه‌ها یا لنگرها به‌عنوان محرک‌هایی استفاده می‌شوند که به عناصر خاصی که شما آنها را تغییر می‌دهید نگاشت می‌کنند. جمع کردن یک عنصر باعث متحرک شدن آن می شود <code>height</code> از ارزش فعلی آن به <code>0</code>. با توجه به اینکه CSS چگونه انیمیشن ها را مدیریت می کند، نمی توانید از آن استفاده کنید <code>padding</code> روی یک <code>.collapse</code> عنصر در عوض، از کلاس به عنوان یک عنصر بسته بندی مستقل استفاده کنید.</p>
+                                <div class="card card-callout mb-3">
+                                    <div class="card-body">
+                                        افکت انیمیشن این مؤلفه به این بستگی دارد <code>prefers-reduced-motion</code> پرس و جو رسانه ای را ببینید <a href="https://v5.getbootstrap.com/docs/5.0/getting-started/accessibility/#reduced-motion">بخش حرکت کاهش یافته اسناد دسترسی ما</a>.
+                                    </div>
+                                </div>
+                                
+                                <h2 id="example">نمونه</h2>
+                                <p>روی دکمه های زیر کلیک کنید تا عنصر دیگری از طریق تغییرات کلاس نمایش داده و پنهان شود:</p>
+                                <ul class="ps-3">
+                                    <li><code>.collapse</code> محتوا را پنهان می کند</li>
+                                    <li><code>.collapsing</code> در طول انتقال اعمال می شود</li>
+                                    <li><code>.collapse.show</code> محتوا را نشان می دهد</li>
+                                </ul>
+                                <p>می توانید از یک لینک با استفاده از <code>href</code> ویژگی یا دکمه ای با <code>data-bs-target</code> صفت. در هر دو مورد، <code>data-bs-toggle="collapse"</code> مورد نیاز است.</p>
+                                <div class="bd-example mb-5">
+                                    <p>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            لینک با href
+                                        </a>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                           دکمه با data-bs-target
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;p&gt;
+        &lt;a class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;collapse&quot; href=&quot;#collapseExample&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+            Link with href
+        &lt;/a&gt;
+        &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#collapseExample&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+            Button with data-bs-target
+        &lt;/button&gt;
+    &lt;/p&gt;
+    &lt;div class=&quot;collapse&quot; id=&quot;collapseExample&quot;&gt;
+        &lt;div class=&quot;card card-body&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+
+                                <h2 id="multiple-targets">اهداف متعدد</h2>
+                                <p>یک <code>&lt;button&gt;</code> یا <code>&lt;a&gt;</code> می تواند چندین عنصر را با ارجاع به آنها با انتخابگر در خود نشان داده و پنهان کند <code>href</code> or <code>data-bs-target</code> صفت.
+                                چندگانه <code>&lt;button&gt;</code> یا <code>&lt;a&gt;</code> اگر هر کدام از آنها به آن ارجاع دهند می توانند یک عنصر را نشان داده و پنهان کنند <code>href</code> or <code>data-bs-target</code> صفت</p>
+                                <div class="bd-example mb-5">
+                                    <p>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">اولین عنصر را تغییر دهید</a>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">اولین عنصر را تغییر دهید</button>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">اولین عنصر را تغییر دهید</button>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                                <div class="card card-body">
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                                <div class="card card-body">
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    <pre>
+    <code class="language-html" data-lang="html">&lt;p&gt;
+        &lt;a class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;collapse&quot; href=&quot;#multiCollapseExample1&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;multiCollapseExample1&quot;&gt;Toggle first element&lt;/a&gt;
+        &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#multiCollapseExample2&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;multiCollapseExample2&quot;&gt;Toggle second element&lt;/button&gt;
+        &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.multi-collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;multiCollapseExample1 multiCollapseExample2&quot;&gt;Toggle both elements&lt;/button&gt;
+    &lt;/p&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;collapse multi-collapse&quot; id=&quot;multiCollapseExample1&quot;&gt;
+                &lt;div class=&quot;card card-body&quot;&gt;
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;div class=&quot;collapse multi-collapse&quot; id=&quot;multiCollapseExample2&quot;&gt;
+                &lt;div class=&quot;card card-body&quot;&gt;
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+    </pre>
+                                </div>
+                                
+                                <h2 id="accordion-example">نمونه آکاردئون</h2>
+                                <p>استفاده <a href="https://v5.getbootstrap.com/docs/5.0/components/card/">card</a> جزء، می توانید رفتار فروپاشی پیش فرض را برای ایجاد آکاردئون گسترش دهید. برای رسیدن به سبک آکاردئونی، حتما از آن استفاده کنید<code>.accordion</code>.</p>
+                                <div class="bd-example mb-5">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            آیتم آکاردئون #1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>این بدنه آکاردئونی اولین مورد است.</strong> به طور پیش‌فرض پنهان می‌شود، تا زمانی که افزونه collapse کلاس‌های مناسبی را که برای استایل دادن به هر عنصر استفاده می‌کنیم اضافه کند. این کلاس ها ظاهر کلی و همچنین نمایش و پنهان شدن از طریق انتقال CSS را کنترل می کنند. شما می توانید هر یک از این موارد را با CSS سفارشی یا نادیده گرفتن متغیرهای پیش فرض ما تغییر دهید. همچنین شایان ذکر است که تقریباً هر HTML می تواند درون آن قرار گیرد<code>.accordion-body</code>، اگرچه این انتقال سرریز را محدود می کند.
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            آیتم آکاردئون #2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>این بدنه آکاردئونی اولین مورد است.</strong> به طور پیش‌فرض پنهان می‌شود، تا زمانی که افزونه collapse کلاس‌های مناسبی را که برای استایل دادن به هر عنصر استفاده می‌کنیم اضافه کند. این کلاس ها ظاهر کلی و همچنین نمایش و پنهان شدن از طریق انتقال CSS را کنترل می کنند. شما می توانید هر یک از این موارد را با CSS سفارشی یا نادیده گرفتن متغیرهای پیش فرض ما تغییر دهید. همچنین شایان ذکر است که تقریباً هر HTML می تواند درون آن قرار گیرد<code>.accordion-body</code>، اگرچه این انتقال سرریز را محدود می کند.
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            آیتم آکاردئون #3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>این بدنه آکاردئونی اولین مورد است.</strong> به طور پیش‌فرض پنهان می‌شود، تا زمانی که افزونه collapse کلاس‌های مناسبی را که برای استایل دادن به هر عنصر استفاده می‌کنیم اضافه کند. این کلاس ها ظاهر کلی و همچنین نمایش و پنهان شدن از طریق انتقال CSS را کنترل می کنند. شما می توانید هر یک از این موارد را با CSS سفارشی یا نادیده گرفتن متغیرهای پیش فرض ما تغییر دهید. همچنین شایان ذکر است که تقریباً هر HTML می تواند درون آن قرار گیرد<code>.accordion-body</code>، اگرچه این انتقال سرریز را محدود می کند.
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion"</span> <span class="na">id</span><span class="o">=</span><span class="s">"accordionExample"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-item"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-header"</span> <span class="na">id</span><span class="o">=</span><span class="s">"headingOne"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-button"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#collapseOne"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"true"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseOne"</span><span class="p">&gt;</span>
+            Accordion Item #1
+        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"collapseOne"</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-collapse collapse show"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"headingOne"</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">"#accordionExample"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-body"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>This is the first item's accordion body.<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>.accordion-body<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span>, though the transition does limit overflow.
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-item"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-header"</span> <span class="na">id</span><span class="o">=</span><span class="s">"headingTwo"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#collapseTwo"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseTwo"</span><span class="p">&gt;</span>
+            Accordion Item #2
+        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"collapseTwo"</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"headingTwo"</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">"#accordionExample"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-body"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>This is the second item's accordion body.<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>.accordion-body<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span>, though the transition does limit overflow.
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-item"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-header"</span> <span class="na">id</span><span class="o">=</span><span class="s">"headingThree"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-button collapsed"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#collapseThree"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseThree"</span><span class="p">&gt;</span>
+            Accordion Item #3
+        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"collapseThree"</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-collapse collapse"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"headingThree"</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">"#accordionExample"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion-body"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>This is the third item's accordion body.<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>.accordion-body<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span>, though the transition does limit overflow.
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                                </div>
+                                
+                                <h2 id="accessibility">دسترسی</h2>
+                                <p>حتما به عنصر کنترل اضافه کنید. این ویژگی به صراحت وضعیت فعلی عنصر جمع شونده متصل به کنترل صفحه خوان و فناوری های کمکی مشابه را نشان می دهد. اگر عنصر جمع شونده به طور پیش‌فرض بسته باشد، ویژگی روی عنصر کنترل باید مقداری برابر با . اگر عنصر جمع شونده را به‌طور پیش‌فرض با استفاده از کلاس باز کرده‌اید، در عوض روی کنترل تنظیم کنید. افزونه بر اساس باز یا بسته شدن عنصر جمع شونده (از طریق جاوا اسکریپت یا به دلیل اینکه کاربر عنصر کنترل دیگری را که به همان عنصر جمع شونده گره خورده است راه اندازی کرده است) به طور خودکار این ویژگی را روی کنترل تغییر می دهد. اگر عنصر HTML عنصر کنترل یک دکمه نیست (به عنوان مثال، یک)، ویژگی باید به عنصر اضافه شود.</p>
+                                <p>اگر عنصر کنترل شما یک عنصر جمع شونده منفرد را هدف قرار می دهد - یعنی مشخصه به یک انتخابگر اشاره می کند - باید ویژگی را به عنصر کنترل اضافه کنید که حاوی عنصر جمع شونده باشد. صفحه‌خوان‌های مدرن و فناوری‌های کمکی مشابه از این ویژگی استفاده می‌کنند تا میانبرهای اضافی را برای کاربران فراهم کنند تا مستقیماً به خود عنصر جمع شونده پیمایش کنند..</p>
+                                <p>توجه داشته باشید که پیاده سازی فعلی بوت استرپ موارد مختلف را پوشش نمی دهد <em>اختیاری</em> تعاملات صفحه کلید شرح داده شده در <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#accordion">شیوه های تألیف WAI-ARIA الگوی آکاردئون 1.1</a> - شما باید خودتان این موارد را با جاوا اسکریپت سفارشی اضافه کنید.</p>
+                                <h2 id="usage">استفاده</h2>
+                                <p>افزونه فروپاشی از چند کلاس برای انجام کارهای سنگین استفاده می کند:</p>
+                                <ul class="ps-3">
+                                    <li><code>.collapse</code> محتوا را پنهان می کند</li>
+                                    <li><code>.collapse.show</code> محتوا را پنهان می کند</li>
+                                    <li><code>.collapsing</code> محتوا را پنهان می کند</li>
+                                </ul>
+                                <p>این کلاس ها را می توان در <code>_transitions.scss</code>.</p>
+                                <h3 id="via-data-attributes">از طریق ویژگی های داده</h3>
+                                <p>فقط اضافه کن <code>data-bs-toggle="collapse"</code> و یک <code>data-bs-target</code> به عنصر برای اختصاص خودکار کنترل یک یا چند عنصر تاشو. را <code>data-bs-target</code> ویژگی یک انتخابگر CSS را برای اعمال collapse می پذیرد. حتما کلاس را اضافه کنید <code>collapse</code> به عنصر جمع شونده اگر می خواهید به طور پیش فرض باز شود، کلاس اضافی را اضافه کنید<code>show</code>.</p>
+                                <p>برای افزودن مدیریت گروه آکاردئونی مانند به یک ناحیه جمع شونده، ویژگی داده را اضافه کنید <code>data-parent="#selector"</code>. برای مشاهده در عمل به دمو مراجعه کنید.</p>
+                                
+                                <h3 id="via-javascript">از طریق جاوا اسکریپت</h3>
+                                <p>فعال کردن دستی با:</p>
+                                <div class="bd-example mb-5">
+    <pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">collapseElementList</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'.collapse'</span><span class="p">))</span>
+    <span class="kd">var</span> <span class="nx">collapseList</span> <span class="o">=</span> <span class="nx">collapseElementList</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">collapseEl</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Collapse</span><span class="p">(</span><span class="nx">collapseEl</span><span class="p">)</span>
+    <span class="p">})</span>
+    </code></pre>
+                                </div>
+                                
+                                <h3 id="options">گزینه ها</h3>
+                                <p>گزینه ها را می توان از طریق ویژگی های داده یا جاوا اسکریپت منتقل کرد. برای ویژگی های داده، نام گزینه را به آن اضافه کنید <code>data-</code>، همانطور که در <code>data-parent=""</code>.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 100px;">نام</th>
+                                            <th style="width: 50px;">نوع</th>
+                                            <th style="width: 50px;">پیش فرض</th>
+                                            <th>توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>parent</code></td>
+                                            <td>انتخابگر | شی jQuery | عنصر DOM </td>
+                                            <td><code>false</code></td>
+                                            <td>اگر والد ارائه شده باشد، پس از نمایش این مورد تاشو، همه عناصر جمع شونده در زیر والد مشخص شده بسته خواهند شد. (مشابه رفتار آکاردئون سنتی - این بستگی به <code>card</code> کلاس). مشخصه باید روی ناحیه جمع شونده هدف تنظیم شود.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>toggle</code></td>
+                                            <td>بولن</td>
+                                            <td><code>true</code></td>
+                                            <td>عنصر جمع شونده را هنگام فراخوانی تغییر می دهد</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h3 id="methods">روش ها</h3>
+                                <div class="card card-callout mb-3">
+                                    <div class="card-body">
+                                        <h4 id="asynchronous-methods-and-transitions">روش ها و انتقال های ناهمزمان</h4>
+                                        <p>همه متدهای API هستند <strong>asynchronous</strong> و شروع کنید <strong>transition</strong>. آنها به محض شروع انتقال به تماس گیرنده باز می گردند اما <strong>قبل از اینکه تمام شود</strong>. علاوه بر این، یک روش فراخوانی بر روی a <strong>جزء انتقال نادیده گرفته خواهد شد</strong>.</p>
+                                        <p><a href="http://pixelwibes.com/docs/5.0/getting-started/javascript/#asynchronous-functions-and-transitions">برای اطلاعات بیشتر به مستندات جاوا اسکریپت ما مراجعه کنید</a>.</p>
+                                    </div>
+                                </div>
+                                
+                                <p>محتوای شما را به عنوان یک عنصر جمع شونده فعال می کند. یک گزینه اختیاری را می پذیرد <code>object</code>.</p>
+                                <p>محتوای شما را به عنوان یک عنصر جمع شونده فعال می کند. یک گزینه اختیاری را می پذیرد:</p>
+                                <div class="bd-example mb-5">
+    <pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCollapse</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'myCollapse'</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">bsCollapse</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Collapse</span><span class="p">(</span><span class="nx">myCollapse</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">toggle</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">})</span>
+    </code></pre>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>متد</th>
+                                            <th>توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>toggle</code></td>
+                                            <td>یک عنصر جمع شونده را به نمایش یا پنهان تغییر می دهد. قبل از اینکه عنصر جمع شونده واقعاً نشان داده یا پنهان شود به تماس گیرنده برمی گردد (یعنی قبل از <code>shown.bs.collapse</code> یا <code>hidden.bs.collapse</code> event occurs).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>show</code></td>
+                                            <td>یک عنصر جمع شونده را به نمایش یا پنهان تغییر می دهد. قبل از اینکه عنصر جمع شونده واقعاً نشان داده یا پنهان شود به تماس گیرنده برمی گردد (یعنی قبل از <code>shown.bs.collapse</code> event occurs). </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>hide</code></td>
+                                            <td>یک عنصر جمع شونده را به نمایش یا پنهان تغییر می دهد. قبل از اینکه عنصر جمع شونده واقعاً نشان داده یا پنهان شود به تماس گیرنده برمی گردد (یعنی قبل از <code>hidden.bs.collapse</code> event occurs).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>dispose</code></td>
+                                            <td>Destroys an element's collapse.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>getInstance</code></td>
+                                            <td>روش ایستا که به شما امکان می دهد نمونه فروپاشی مرتبط با یک عنصر DOM را دریافت کنید.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h3 id="events">رویدادها</h3>
+                                <p>کلاس فروپاشی بوت استرپ چند رویداد را برای اتصال به عملکرد جمع شدن در معرض نمایش می گذارد.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 150px;">نوع رویداد</th>
+                                            <th>توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>show.bs.collapse</code></td>
+                                            <td>روش ایستا که به شما امکان می دهد نمونه فروپاشی مرتبط با یک عنصر DOM را دریافت کنید.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>shown.bs.collapse</code></td>
+                                            <td>روش ایستا که به شما امکان می دهد نمونه فروپاشی مرتبط با یک عنصر DOM را دریافت کنید.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>hide.bs.collapse</code></td>
+                                            <td>روش ایستا که به شما امکان می دهد نمونه فروپاشی مرتبط با یک عنصر DOM را دریافت کنید.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>hidden.bs.collapse</code></td>
+                                            <td>روش ایستا که به شما امکان می دهد نمونه فروپاشی مرتبط با یک عنصر DOM را دریافت کنید.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="bd-example mb-5">
+    <pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCollapsible</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'myCollapsible'</span><span class="p">)</span>
+    <span class="nx">myCollapsible</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'hidden.bs.collapse'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// do something...
+    </span><span class="c1"></span><span class="p">})</span>
+    </code></pre>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-sm-12 d-none d-sm-block">
+                                <div class="sticky-lg-top">
+                                    <strong class="d-block h6 my-2 pb-2 border-bottom">در این صفحه</strong>
+                                    <nav class="color-bg-200 py-3">
+                                        <ul class="side-navbar">
+                                            <li><a href="#how-it-works">چگونه کار می کند</a></li>
+                                            <li><a href="#example">نمونه</a></li>
+                                            <li><a href="#multiple-targets">اهداف متعدد</a></li>
+                                            <li><a href="#accordion-example">نمونه آکاردئون</a></li>
+                                            <li><a href="#accessibility">دسترسی</a></li>
+                                            <li><a href="#usage">استفاده</a>
+                                                <ul>
+                                                    <li><a href="#via-data-attributes">از طریق ویژگی های داده</a></li>
+                                                    <li><a href="#via-javascript">از طریق جاوا اسکریپت</a></li>
+                                                    <li><a href="#options">گزینه ها</a></li>
+                                                    <li><a href="#methods">روش ها</a></li>
+                                                    <li><a href="#events">رویدادها</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> <!-- Row end  -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Custom Settings-->
+            <div class="modal fade right" id="Settingmodal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog  modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">تنظیمات سفارشی</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+                        </div>
+                        <div class="modal-body custom_setting">
+                            <!-- Settings: Color -->
+                            <div class="setting-theme pb-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-color-bucket fs-4 me-2 text-primary"></i>تنظیمات رنگ قالب</h6>
+                                <ul class="list-unstyled row row-cols-3 g-2 choose-skin mb-2 mt-2">
+                                    <li data-theme="indigo"><div class="indigo"></div></li>
+                                    <li data-theme="tradewind"><div class="tradewind"></div></li>
+                                    <li data-theme="monalisa"><div class="monalisa"></div></li>
+                                    <li data-theme="blue" class="active"><div class="blue"></div></li>
+                                    <li data-theme="cyan"><div class="cyan"></div></li>
+                                    <li data-theme="green"><div class="green"></div></li>
+                                    <li data-theme="orange"><div class="orange"></div></li>
+                                    <li data-theme="blush"><div class="blush"></div></li>
+                                    <li data-theme="red"><div class="red"></div></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-gradient py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-paint fs-4 me-2 text-primary"></i>گرادیان نوار کناری</h6>
+                                <div class="form-check form-switch gradient-switch pt-2 mb-2">
+                                    <input class="form-check-input" type="checkbox" id="CheckGradient">
+                                    <label class="form-check-label" for="CheckGradient">فعال کردن گرادیان! ( نوار کناری )</label>
+                                </div>
+                            </div>
+                            <!-- Settings: Template dynamics -->
+                            <div class="dynamic-block py-3">
+                                <ul class="list-unstyled choose-skin mb-2 mt-1">
+                                    <li data-theme="dynamic"><div class="dynamic"><i class="icofont-paint me-2"></i> برای تنظیمات پویا کلیک کنید</div></li>
+                                </ul>
+                                <div class="dt-setting">
+                                    <ul class="list-group list-unstyled mt-1">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ اصلی</label>
+                                            <button id="primaryColorPicker" class="btn bg-primary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label>رنگ ثانویه</label>
+                                            <button id="secondaryColorPicker" class="btn bg-secondary avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 1</label>
+                                            <button id="chartColorPicker1" class="btn chart-color1 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 2</label>
+                                            <button id="chartColorPicker2" class="btn chart-color2 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 3</label>
+                                            <button id="chartColorPicker3" class="btn chart-color3 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 4</label>
+                                            <button id="chartColorPicker4" class="btn chart-color4 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-2">
+                                            <label class="text-muted">رنگ نمودار 5</label>
+                                            <button id="chartColorPicker5" class="btn chart-color5 avatar xs border-0 rounded-0"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Settings: Font -->
+                            <div class="setting-font py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-font fs-4 me-2 text-primary"></i> تنظیمات فونت</h6>
+                                <ul class="list-group font_setting mt-1">
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-poppins" value="font-poppins">
+                                            <label class="form-check-label" for="font-poppins">
+                                                فونت گوگل پاپینس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-opensans" value="font-opensans" checked="">
+                                            <label class="form-check-label" for="font-opensans">
+                                                فونت گوگل اوپن سانس
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-montserrat" value="font-montserrat">
+                                            <label class="form-check-label" for="font-montserrat">
+                                                فونت گوگل مونت
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-1 px-2">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" type="radio" name="font" id="font-mukta" value="font-mukta">
+                                            <label class="form-check-label" for="font-mukta">
+                                                فونت گوگل موتکا
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Settings: Light/dark -->
+                            <div class="setting-mode py-3">
+                                <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-layout fs-4 me-2 text-primary"></i>چیدمان کنتراست</h6>
+                                <ul class="list-group list-unstyled mb-0 mt-1">
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-switch mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-switch">
+                                            <label class="form-check-label" for="theme-switch">فعال کردن حالت تاریک!</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-high-contrast mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                            <label class="form-check-label" for="theme-high-contrast">فعال کردن کنتراست بالا</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center py-1 px-2">
+                                        <div class="form-check form-switch theme-rtl mb-0">
+                                            <input class="form-check-input" type="checkbox" id="theme-rtl">
+                                            <label class="form-check-label" for="theme-rtl">فعال کردن حالت چپ چین!</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-start">
+                            <button type="button" class="btn btn-white border lift" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary lift">ذخیره تنظبمات</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../assets/bundles/libscripts.bundle.js"></script>
+
+    <!-- Prism js file please do not add in your project -->
+    <script src="../assets/plugin/prism/prism.js"></script>
+
+    <!-- Jquery Page Js -->
+    <script src="../../js/template.js"></script>
+</body>
+
+</html>
